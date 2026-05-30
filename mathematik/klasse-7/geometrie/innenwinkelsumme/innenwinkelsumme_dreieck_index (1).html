@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2563eb">
+  <title>Lernpfad: Innenwinkelsumme im Dreieck</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiKDtYTWVeOuGy" crossorigin="anonymous"></script>
+  <style>
+    :root{
+      --bg:#f4f7fb; --card:#ffffff; --ink:#172033; --muted:#64748b; --line:#d9e2ef;
+      --blue:#2563eb; --blue2:#dbeafe; --green:#16a34a; --green2:#dcfce7;
+      --orange:#f97316; --orange2:#ffedd5; --violet:#7c3aed; --violet2:#ede9fe;
+      --red:#dc2626; --red2:#fee2e2; --shadow:0 18px 55px rgba(30,41,59,.12);
+      --radius:24px; --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; font-family:ui-rounded, "Aptos", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      color:var(--ink); background:
+        radial-gradient(circle at 15% 10%, rgba(37,99,235,.16), transparent 28rem),
+        radial-gradient(circle at 85% 0%, rgba(124,58,237,.13), transparent 24rem),
+        linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+      min-height:100vh;
+    }
+    .app{max-width:var(--max); margin:0 auto; padding:18px clamp(14px, 2vw, 24px) 48px}
+    .topbar{
+      position:sticky; top:0; z-index:20; margin:-1px -8px 18px; padding:10px 8px;
+      backdrop-filter:blur(18px); background:rgba(244,247,251,.78); border-bottom:1px solid rgba(217,226,239,.7);
+    }
+    .topbar-inner{display:flex; gap:12px; align-items:center; justify-content:space-between; max-width:var(--max); margin:0 auto}
+    .brand{display:flex; gap:10px; align-items:center; min-width:0}
+    .logo{
+      width:42px; height:42px; border-radius:14px; display:grid; place-items:center; color:white; font-weight:900;
+      background:linear-gradient(135deg,var(--blue),var(--violet)); box-shadow:0 12px 25px rgba(37,99,235,.25);
+      flex:0 0 auto;
+    }
+    .brand h1{font-size:clamp(1rem,2vw,1.45rem); margin:0; line-height:1.05; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+    .brand small{display:block; color:var(--muted); font-size:.78rem; margin-top:2px}
+    .top-actions{display:flex; gap:8px; align-items:center; flex-wrap:wrap; justify-content:flex-end}
+    button, .btn{
+      appearance:none; border:0; border-radius:16px; padding:11px 14px; font-weight:800; font-size:.95rem;
+      background:var(--blue); color:#fff; cursor:pointer; box-shadow:0 10px 22px rgba(37,99,235,.18);
+      touch-action:manipulation; text-decoration:none; display:inline-flex; gap:8px; align-items:center; justify-content:center;
+    }
+    button:hover, .btn:hover{filter:brightness(.98); transform:translateY(-1px)}
+    button:active, .btn:active{transform:translateY(0)}
+    button.secondary, .btn.secondary{background:#fff; color:var(--ink); border:1px solid var(--line); box-shadow:none}
+    button.ghost{background:transparent; color:var(--ink); border:1px solid var(--line); box-shadow:none}
+    button.success{background:var(--green)}
+    button.warning{background:var(--orange)}
+    button.small{padding:8px 10px; border-radius:13px; font-size:.86rem}
+    .hero{
+      border-radius:32px; background:linear-gradient(135deg,#1d4ed8 0%, #2563eb 55%, #7c3aed 100%);
+      color:white; padding:clamp(22px, 4vw, 44px); box-shadow:var(--shadow); overflow:hidden; position:relative;
+    }
+    .hero:after{content:""; position:absolute; right:-90px; top:-90px; width:280px; height:280px; border-radius:50%; background:rgba(255,255,255,.14)}
+    .hero-grid{display:grid; grid-template-columns:1.25fr .75fr; gap:22px; align-items:center; position:relative; z-index:1}
+    .hero h2{font-size:clamp(2rem,5vw,4rem); line-height:.98; margin:0 0 14px; letter-spacing:-.045em}
+    .hero p{font-size:clamp(1.02rem,1.7vw,1.2rem); max-width:68ch; margin:0; color:rgba(255,255,255,.92)}
+    .hero-card{background:rgba(255,255,255,.13); border:1px solid rgba(255,255,255,.28); border-radius:24px; padding:18px; backdrop-filter:blur(8px)}
+    .hero-card strong{display:block; font-size:1.04rem; margin-bottom:8px}
+    .hero-card ul{padding-left:1.2rem; margin:.4rem 0 0; line-height:1.55}
+    .navwrap{margin:18px 0; overflow-x:auto; padding-bottom:4px}
+    .tabs{display:flex; gap:8px; min-width:max-content}
+    .tab{
+      background:#fff; color:var(--ink); border:1px solid var(--line); box-shadow:none; border-radius:999px;
+      padding:10px 14px; font-weight:900;
+    }
+    .tab.active{background:var(--ink); color:#fff; border-color:var(--ink)}
+    .progress-card{background:#fff; border:1px solid var(--line); border-radius:22px; padding:14px 16px; margin:0 0 18px; box-shadow:0 10px 28px rgba(30,41,59,.06)}
+    .progress-top{display:flex; justify-content:space-between; gap:12px; align-items:center; color:var(--muted); font-weight:800; margin-bottom:9px}
+    .progressbar{height:13px; border-radius:999px; background:#e2e8f0; overflow:hidden}
+    .progressbar span{display:block; height:100%; width:0%; background:linear-gradient(90deg,var(--green),var(--blue)); transition:width .3s ease}
+    section.page{display:none; animation:fade .22s ease}
+    section.page.active{display:block}
+    @keyframes fade{from{opacity:.3; transform:translateY(5px)}to{opacity:1; transform:none}}
+    .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:18px}
+    .card{
+      background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:clamp(18px,2.5vw,26px);
+      box-shadow:0 14px 42px rgba(30,41,59,.08); min-width:0;
+    }
+    .card h3{margin:0 0 10px; font-size:clamp(1.25rem,2.4vw,1.65rem); letter-spacing:-.025em}
+    .card h4{margin:18px 0 8px; font-size:1.08rem}
+    .card p{line-height:1.62; margin:.6rem 0}
+    .span-12{grid-column:span 12}.span-8{grid-column:span 8}.span-6{grid-column:span 6}.span-4{grid-column:span 4}
+    .pill{display:inline-flex; gap:6px; align-items:center; border-radius:999px; padding:6px 10px; background:var(--blue2); color:#1d4ed8; font-weight:900; font-size:.82rem; margin:0 6px 8px 0}
+    .pill.green{background:var(--green2); color:#166534}.pill.orange{background:var(--orange2); color:#9a3412}.pill.violet{background:var(--violet2); color:#5b21b6}.pill.red{background:var(--red2); color:#991b1b}
+    .task{border-left:7px solid var(--blue); background:#f8fbff; border-radius:18px; padding:16px; margin:14px 0}
+    .task.orange{border-left-color:var(--orange); background:#fff8f2}.task.green{border-left-color:var(--green); background:#f5fff8}.task.violet{border-left-color:var(--violet); background:#fbf8ff}
+    .checkrow{display:flex; align-items:center; gap:10px; padding:12px 14px; border:1px solid var(--line); border-radius:16px; background:#fff; margin:10px 0; cursor:pointer; font-weight:700}
+    .checkrow input{width:22px; height:22px; accent-color:var(--green)}
+    .hintbox{border:1px dashed #93c5fd; background:#eff6ff; border-radius:18px; padding:14px; margin:12px 0}
+    .hintlist{display:grid; gap:10px; margin-top:12px}
+    .hint{display:none; background:#fff; border:1px solid var(--line); border-radius:15px; padding:12px; line-height:1.55}
+    .hint.show{display:block}
+    .cooldown{color:var(--muted); font-weight:800; margin-left:8px}
+    details{border:1px solid var(--line); background:#fff; border-radius:18px; padding:12px 14px; margin:12px 0}
+    summary{cursor:pointer; font-weight:900}
+    .solution{background:#f0fdf4; border:1px solid #bbf7d0; border-radius:18px; padding:14px; margin-top:12px; display:none}
+    .teacher .solution{display:block}
+    .answerline{display:inline-block; border-bottom:2px solid #94a3b8; min-width:150px; height:1.4em; vertical-align:baseline}
+    input[type="text"], input[type="number"], textarea{
+      width:100%; border:1px solid var(--line); border-radius:16px; padding:12px 13px; font:inherit; background:#fff;
+      outline:none;
+    }
+    input[type="text"]:focus, input[type="number"]:focus, textarea:focus{border-color:var(--blue); box-shadow:0 0 0 4px rgba(37,99,235,.12)}
+    textarea{min-height:88px; resize:vertical}
+    .inline-input{display:inline-block; width:90px; margin:0 6px; text-align:center}
+    .feedback{font-weight:900; margin-top:8px; min-height:1.5em}
+    .feedback.ok{color:var(--green)}.feedback.no{color:var(--red)}
+    .svgwrap{width:100%; overflow:hidden; border:1px solid var(--line); border-radius:22px; background:linear-gradient(#fff,#f8fafc); padding:8px; position:relative}
+    svg{max-width:100%; height:auto; display:block}
+    .dragpoint{cursor:grab; touch-action:none}.dragpoint:active{cursor:grabbing}
+    .math-scroll{overflow-x:auto; padding-bottom:4px}
+    .two-col{columns:2; column-gap:24px}
+    .hosting{background:#0f172a; color:#e2e8f0; border-radius:22px; padding:18px; overflow:auto}
+    .hosting code{background:#1e293b; color:#bfdbfe; padding:2px 5px; border-radius:6px}
+    .hosting a{color:#93c5fd}
+    .steps{counter-reset:step; display:grid; gap:10px; margin:12px 0}
+    .step{counter-increment:step; border:1px solid rgba(255,255,255,.14); border-radius:16px; padding:13px; background:rgba(255,255,255,.05)}
+    .step:before{content:counter(step); display:inline-grid; place-items:center; width:28px; height:28px; border-radius:50%; background:#2563eb; color:white; margin-right:8px; font-weight:900}
+    .footer-nav{display:flex; justify-content:space-between; gap:10px; margin-top:18px; flex-wrap:wrap}
+    .badge{font-size:.78rem; font-weight:900; background:#e2e8f0; color:#334155; padding:4px 9px; border-radius:999px; white-space:nowrap}
+    .print-only{display:none}
+    @media (max-width:900px){
+      .hero-grid{grid-template-columns:1fr}.span-8,.span-6,.span-4{grid-column:span 12}.topbar-inner{align-items:flex-start}.top-actions{max-width:48%;}
+      .two-col{columns:1}.brand small{display:none}
+    }
+    @media (max-width:640px){
+      .topbar{position:static}.topbar-inner{flex-direction:column}.top-actions{max-width:none; width:100%; justify-content:flex-start}.logo{width:38px;height:38px}.hero{border-radius:24px}.card{border-radius:20px}.tabs{padding-right:18px}
+      button,.btn{padding:10px 12px}.brand h1{white-space:normal}
+    }
+    @media print{
+      body{background:#fff}.topbar,.navwrap,.progress-card,.footer-nav,button,.hosting{display:none!important}.app{max-width:none;padding:0}.hero{color:#000;background:#fff;box-shadow:none;border:1px solid #000}.card{box-shadow:none;border-color:#999;break-inside:avoid}section.page{display:block!important}.print-only{display:block}.solution{display:block!important}.hint{display:block!important}
+    }
+  </style>
+</head>
+<body>
+  <div class="app" id="app">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <div class="logo">△</div>
+          <div>
+            <h1>Innenwinkelsumme im Dreieck</h1>
+            <small>Klasse 7 · Entdecken · Begründen · Anwenden</small>
+          </div>
+        </div>
+        <div class="top-actions">
+          <button class="secondary small" id="fullscreenBtn" title="Öffnet diese Seite bildschirmfüllend in einem neuen Tab">↗ Vollbild</button>
+          <button class="ghost small" id="teacherBtn">🔐 Lehrerzugang</button>
+          <button class="ghost small" id="resetBtn">↺ Zurücksetzen</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero">
+      <div class="hero-grid">
+        <div>
+          <h2>Warum sind es immer \(180^\circ\)?</h2>
+          <p>Du entdeckst die Innenwinkelsumme zuerst mit Papier und Schere. Danach begründest du den Satz mit einer Hilfslinie, Stufenwinkeln und Wechselwinkeln.</p>
+        </div>
+        <div class="hero-card">
+          <strong>Material</strong>
+          <ul>
+            <li>Papier, Schere, Kleber</li>
+            <li>Geodreieck und drei Farben</li>
+            <li>Heft oder digitales Notizblatt</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navwrap" aria-label="Seitennavigation">
+      <div class="tabs" id="tabs"></div>
+    </nav>
+
+    <div class="progress-card">
+      <div class="progress-top"><span>Lernfortschritt</span><span id="progressText">0 von 6 Schritten</span></div>
+      <div class="progressbar"><span id="progressBar"></span></div>
+    </div>
+
+    <main>
+      <section class="page active" id="page-start" data-title="Start">
+        <div class="grid">
+          <div class="card span-8">
+            <span class="pill">Forscherfrage</span>
+            <h3>Was sollst du am Ende können?</h3>
+            <div class="task">
+              <p><strong>Ziel:</strong> Du erklärst, warum in jedem Dreieck gilt:</p>
+              <p class="math-scroll">\[\alpha+\beta+\gamma=180^\circ\]</p>
+            </div>
+            <h4>Dein Lernweg</h4>
+            <label class="checkrow"><input type="checkbox" data-progress="start"> Ich weiß, welches Material ich brauche.</label>
+            <label class="checkrow"><input type="checkbox" data-progress="start2"> Ich kenne die Begriffe Innenwinkel, gestreckter Winkel, Stufenwinkel und Wechselwinkel.</label>
+          </div>
+          <div class="card span-4">
+            <span class="pill green">Vorwissen</span>
+            <h3>Kurzer Check</h3>
+            <p>Ergänze die Begriffe.</p>
+            <div class="task green">
+              <p>Ein gestreckter Winkel hat <input class="inline-input" id="pre1" type="number" inputmode="numeric"> Grad.</p>
+              <button class="small success" onclick="checkSingle('pre1',180,'preFb')">Prüfen</button>
+              <div class="feedback" id="preFb"></div>
+            </div>
+            <details>
+              <summary>Begriffe kurz wiederholen</summary>
+              <p><strong>Stufenwinkel:</strong> Winkel in gleicher Lage an zwei parallelen Geraden.</p>
+              <p><strong>Wechselwinkel:</strong> Winkel auf gegenüberliegenden Seiten der Schnittgeraden.</p>
+              <p>Bei parallelen Geraden sind diese Winkel jeweils gleich groß.</p>
+            </details>
+          </div>
+        </div>
+        <div class="footer-nav"><span></span><button onclick="showPage('page-schneiden')">Weiter zu Station 1 →</button></div>
+      </section>
+
+      <section class="page" id="page-schneiden" data-title="1 Dreieck">
+        <div class="grid">
+          <div class="card span-6">
+            <span class="pill orange">Station 1</span>
+            <h3>Dreieck herstellen und Winkel markieren</h3>
+            <div class="task orange">
+              <ol>
+                <li>Zeichne ein beliebiges Dreieck auf Papier.</li>
+                <li>Beschrifte die Eckpunkte mit \(A\), \(B\), \(C\).</li>
+                <li>Markiere die Innenwinkel farbig: \(\alpha\) bei \(A\), \(\beta\) bei \(B\), \(\gamma\) bei \(C\).</li>
+                <li>Schneide das Dreieck sauber aus.</li>
+              </ol>
+            </div>
+            <label class="checkrow"><input type="checkbox" data-progress="cut1"> Ich habe ein Dreieck gezeichnet und ausgeschnitten.</label>
+            <label class="checkrow"><input type="checkbox" data-progress="cut2"> Ich habe alle drei Innenwinkel farbig markiert.</label>
+            <div class="hintbox" data-hints="cut">
+              <strong>Tipps zur Station</strong>
+              <div class="hintlist"></div>
+              <button class="small" onclick="nextHint('cut')">Tipp anzeigen</button><span class="cooldown" id="cool-cut"></span>
+            </div>
+          </div>
+          <div class="card span-6">
+            <span class="pill violet">Interaktiv</span>
+            <h3>Winkel im Dreieck erkunden</h3>
+            <p>Ziehe die Punkte. Die Winkelsumme bleibt gleich.</p>
+            <div class="svgwrap">
+              <svg id="triangleSvg" viewBox="0 0 620 430" role="img" aria-label="Interaktives Dreieck mit verschiebbaren Punkten">
+                <defs>
+                  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.14"/></filter>
+                </defs>
+                <rect x="0" y="0" width="620" height="430" rx="20" fill="#f8fafc"/>
+                <g id="gridLines" opacity=".35"></g>
+                <polygon id="triPoly" points="" fill="rgba(37,99,235,.12)" stroke="#1d4ed8" stroke-width="4" filter="url(#shadow)"/>
+                <g id="angleLabels"></g>
+                <g id="points"></g>
+              </svg>
+            </div>
+            <div class="task violet">
+              <p><strong>Gemessene Winkel:</strong></p>
+              <p>\(\alpha\approx\) <span id="angA">?</span>°, \(\beta\approx\) <span id="angB">?</span>°, \(\gamma\approx\) <span id="angC">?</span>°</p>
+              <p><strong>Summe:</strong> <span id="angSum">?</span>°</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-nav"><button class="secondary" onclick="showPage('page-start')">← Zurück</button><button onclick="showPage('page-zerreissprobe')">Weiter zu Station 2 →</button></div>
+      </section>
+
+      <section class="page" id="page-zerreissprobe" data-title="2 Zerreißprobe">
+        <div class="grid">
+          <div class="card span-6">
+            <span class="pill orange">Station 2</span>
+            <h3>Die Zerreißprobe</h3>
+            <div class="task orange">
+              <ol>
+                <li>Reiße oder schneide die drei Ecken deines Dreiecks ab.</li>
+                <li>Lege die drei Winkelecken so aneinander, dass die Winkelspitzen in einem Punkt zusammentreffen.</li>
+                <li>Ordne die drei Winkel an einen gestreckten Winkel an.</li>
+                <li>Klebe deine drei Winkelecken ins Heft.</li>
+              </ol>
+            </div>
+            <label class="checkrow"><input type="checkbox" data-progress="tear1"> Ich habe die drei Winkelecken angeordnet.</label>
+            <label class="checkrow"><input type="checkbox" data-progress="tear2"> Ich habe meine Beobachtung notiert.</label>
+            <h4>Beobachtung</h4>
+            <p>Was fällt dir auf?</p>
+            <textarea id="obs" placeholder="Meine Beobachtung ..."></textarea>
+            <div class="hintbox" data-hints="tear">
+              <strong>Tipps zur Zerreißprobe</strong>
+              <div class="hintlist"></div>
+              <button class="small" onclick="nextHint('tear')">Tipp anzeigen</button><span class="cooldown" id="cool-tear"></span>
+            </div>
+          </div>
+          <div class="card span-6">
+            <span class="pill violet">Virtuelles Modell</span>
+            <h3>So sollen die Ecken liegen</h3>
+            <div class="svgwrap">
+              <svg id="tearSvg" viewBox="0 0 620 350" role="img" aria-label="Virtuelle Zerreißprobe mit drei Winkelecken">
+                <rect width="620" height="350" rx="20" fill="#fffaf5"/>
+                <line x1="70" y1="245" x2="550" y2="245" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>
+                <text x="310" y="292" text-anchor="middle" fill="#475569" font-weight="800">gestreckter Winkel: 180°</text>
+                <g id="piecesBefore">
+                  <polygon points="170,80 370,115 235,245" fill="#dbeafe" stroke="#2563eb" stroke-width="4"/>
+                  <text x="160" y="75" fill="#1d4ed8" font-size="28" font-weight="900">α</text>
+                  <text x="378" y="116" fill="#16a34a" font-size="28" font-weight="900">β</text>
+                  <text x="233" y="268" fill="#f97316" font-size="28" font-weight="900">γ</text>
+                  <text x="310" y="40" text-anchor="middle" fill="#64748b" font-weight="800">Vor dem Anlegen: dein Dreieck</text>
+                </g>
+                <g id="piecesAfter" style="display:none">
+                  <path d="M310 245 L150 245 A160 160 0 0 1 210 124 Z" fill="rgba(37,99,235,.24)" stroke="#2563eb" stroke-width="4"/>
+                  <path d="M310 245 L210 124 A160 160 0 0 1 410 124 Z" fill="rgba(249,115,22,.25)" stroke="#f97316" stroke-width="4"/>
+                  <path d="M310 245 L410 124 A160 160 0 0 1 470 245 Z" fill="rgba(22,163,74,.22)" stroke="#16a34a" stroke-width="4"/>
+                  <text x="205" y="198" fill="#1d4ed8" font-size="30" font-weight="900">α</text>
+                  <text x="303" y="162" fill="#f97316" font-size="30" font-weight="900">γ</text>
+                  <text x="420" y="198" fill="#15803d" font-size="30" font-weight="900">β</text>
+                  <text x="310" y="40" text-anchor="middle" fill="#64748b" font-weight="800">Nach dem Anlegen: α + γ + β bilden eine Gerade</text>
+                </g>
+              </svg>
+            </div>
+            <button class="warning" id="arrangeBtn">Winkelecken anlegen</button>
+            <div class="task green">
+              <p>Ergänze deine Vermutung:</p>
+              <p>\(\alpha+\beta+\gamma=\) <input class="inline-input" id="sumGuess" type="number" inputmode="numeric"> \(^\circ\)</p>
+              <button class="small success" onclick="checkSingle('sumGuess',180,'sumGuessFb')">Prüfen</button>
+              <div class="feedback" id="sumGuessFb"></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-nav"><button class="secondary" onclick="showPage('page-schneiden')">← Zurück</button><button onclick="showPage('page-satz')">Weiter zu Station 3 →</button></div>
+      </section>
+
+      <section class="page" id="page-satz" data-title="3 Satz">
+        <div class="grid">
+          <div class="card span-7">
+            <span class="pill green">Station 3</span>
+            <h3>Vom Experiment zum Satz</h3>
+            <div class="task green">
+              <p>Die Zerreißprobe führt zu diesem Satz:</p>
+              <p class="math-scroll">\[\boxed{\alpha+\beta+\gamma=180^\circ}\]</p>
+              <p><strong>In Worten:</strong> Die Innenwinkelsumme in jedem Dreieck beträgt \(180^\circ\).</p>
+            </div>
+            <h4>Warum reicht das Experiment noch nicht als Beweis?</h4>
+            <label class="checkrow"><input type="checkbox" class="expCheck" data-correct="true"> Weil man beim Schneiden ungenau arbeiten kann.</label>
+            <label class="checkrow"><input type="checkbox" class="expCheck" data-correct="true"> Weil man nur ein oder wenige Dreiecke untersucht.</label>
+            <label class="checkrow"><input type="checkbox" class="expCheck" data-correct="true"> Weil ein mathematischer Satz für alle Dreiecke gelten muss.</label>
+            <label class="checkrow"><input type="checkbox" class="expCheck" data-correct="false"> Weil Winkel nicht gemessen werden können.</label>
+            <button class="small success" onclick="checkExperiment()">Auswahl prüfen</button>
+            <div class="feedback" id="expFb"></div>
+            <label class="checkrow"><input type="checkbox" data-progress="satz1"> Ich kann den Satz nennen.</label>
+          </div>
+          <div class="card span-5">
+            <span class="pill violet">Merksatz</span>
+            <h3>In dein Heft</h3>
+            <p>Schreibe den Merksatz vollständig ab und zeichne ein kleines Dreieck dazu.</p>
+            <details>
+              <summary>Formulierungshilfe</summary>
+              <p>In jedem Dreieck beträgt die Summe der drei Innenwinkel \(180^\circ\).</p>
+            </details>
+            <div class="hintbox" data-hints="satz">
+              <strong>Tipps</strong>
+              <div class="hintlist"></div>
+              <button class="small" onclick="nextHint('satz')">Tipp anzeigen</button><span class="cooldown" id="cool-satz"></span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-nav"><button class="secondary" onclick="showPage('page-zerreissprobe')">← Zurück</button><button onclick="showPage('page-begruendung')">Weiter zur Begründung →</button></div>
+      </section>
+
+      <section class="page" id="page-begruendung" data-title="4 Begründung">
+        <div class="grid">
+          <div class="card span-6">
+            <span class="pill violet">Station 4</span>
+            <h3>Begründung mit Hilfslinie</h3>
+            <div class="task violet">
+              <ol>
+                <li>Zeichne ein Dreieck \(ABC\).</li>
+                <li>Ziehe durch \(C\) eine Gerade \(g\), die parallel zu \(AB\) ist.</li>
+                <li>Übertrage gedanklich \(\alpha\) und \(\beta\) an die Hilfslinie.</li>
+                <li>Begründe die Gleichheit mit Stufenwinkeln oder Wechselwinkeln.</li>
+              </ol>
+            </div>
+            <div class="hintbox" data-hints="proof">
+              <strong>Tipps zur Begründung</strong>
+              <div class="hintlist"></div>
+              <button class="small" onclick="nextHint('proof')">Tipp anzeigen</button><span class="cooldown" id="cool-proof"></span>
+            </div>
+            <label class="checkrow"><input type="checkbox" data-progress="proof1"> Ich habe die Hilfslinie \(g\parallel AB\) eingezeichnet.</label>
+            <label class="checkrow"><input type="checkbox" data-progress="proof2"> Ich kann erklären, warum \(\alpha\) und \(\beta\) an der Hilfslinie wieder auftauchen.</label>
+          </div>
+          <div class="card span-6">
+            <span class="pill orange">Interaktive Skizze</span>
+            <h3>Beweisskizze Schritt für Schritt</h3>
+            <div class="svgwrap">
+              <svg id="proofSvg" viewBox="0 0 620 420" role="img" aria-label="Beweisskizze mit Hilfslinie durch C parallel zu AB">
+                <rect width="620" height="420" rx="20" fill="#f8fafc"/>
+                <line x1="90" y1="330" x2="530" y2="330" stroke="#0f172a" stroke-width="4"/>
+                <line x1="110" y1="330" x2="320" y2="105" stroke="#0f172a" stroke-width="4"/>
+                <line x1="530" y1="330" x2="320" y2="105" stroke="#0f172a" stroke-width="4"/>
+                <text x="102" y="362" font-size="22" font-weight="900">A</text>
+                <text x="530" y="362" font-size="22" font-weight="900">B</text>
+                <text x="318" y="88" font-size="22" font-weight="900">C</text>
+                <text x="163" y="306" fill="#2563eb" font-size="25" font-weight="900">α</text>
+                <text x="462" y="306" fill="#16a34a" font-size="25" font-weight="900">β</text>
+                <text x="314" y="140" fill="#f97316" font-size="25" font-weight="900">γ</text>
+                <g id="proofLine" style="display:none">
+                  <line x1="70" y1="105" x2="570" y2="105" stroke="#7c3aed" stroke-width="4" stroke-dasharray="10 8"/>
+                  <text x="570" y="92" text-anchor="end" fill="#7c3aed" font-weight="900">g ∥ AB</text>
+                </g>
+                <g id="proofAlpha" style="display:none">
+                  <path d="M320 105 L246 105 A74 74 0 0 1 270 51" fill="rgba(37,99,235,.18)" stroke="#2563eb" stroke-width="4"/>
+                  <text x="247" y="91" fill="#2563eb" font-size="27" font-weight="900">α</text>
+                </g>
+                <g id="proofBeta" style="display:none">
+                  <path d="M320 105 L370 51 A74 74 0 0 1 394 105" fill="rgba(22,163,74,.18)" stroke="#16a34a" stroke-width="4"/>
+                  <text x="376" y="91" fill="#16a34a" font-size="27" font-weight="900">β</text>
+                </g>
+                <g id="proofStraight" style="display:none">
+                  <path d="M245 105 A75 75 0 0 1 395 105" fill="none" stroke="#dc2626" stroke-width="7" stroke-linecap="round"/>
+                  <text x="320" y="32" text-anchor="middle" fill="#dc2626" font-size="22" font-weight="900">α + γ + β = 180°</text>
+                </g>
+              </svg>
+            </div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+              <button class="small" onclick="proofStep(1)">1 Hilfslinie</button>
+              <button class="small" onclick="proofStep(2)">2 α</button>
+              <button class="small" onclick="proofStep(3)">3 β</button>
+              <button class="small success" onclick="proofStep(4)">4 Ergebnis</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-nav"><button class="secondary" onclick="showPage('page-satz')">← Zurück</button><button onclick="showPage('page-ordnen')">Weiter zu Station 5 →</button></div>
+      </section>
+
+      <section class="page" id="page-ordnen" data-title="5 Ordnen">
+        <div class="grid">
+          <div class="card span-7">
+            <span class="pill green">Station 5</span>
+            <h3>Begründung ordnen</h3>
+            <p>Bringe die Begründung in die richtige Reihenfolge. Trage die Buchstaben ein.</p>
+            <div class="task green">
+              <p><strong>A:</strong> Die drei Winkel an der Hilfslinie bilden zusammen einen gestreckten Winkel.</p>
+              <p><strong>B:</strong> Durch \(C\) zeichnen wir eine Gerade \(g\), die parallel zu \(AB\) ist.</p>
+              <p><strong>C:</strong> Deshalb gilt \(\alpha+\beta+\gamma=180^\circ\).</p>
+              <p><strong>D:</strong> Wegen der parallelen Geraden sind die entsprechenden Stufen- bzw. Wechselwinkel gleich groß.</p>
+              <p><strong>E:</strong> Die Winkel \(\alpha\) und \(\beta\) können dadurch an die Hilfslinie bei \(C\) übertragen werden.</p>
+            </div>
+            <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center">
+              <input class="inline-input" maxlength="1" id="ord1" aria-label="Schritt 1">
+              <span>→</span><input class="inline-input" maxlength="1" id="ord2" aria-label="Schritt 2">
+              <span>→</span><input class="inline-input" maxlength="1" id="ord3" aria-label="Schritt 3">
+              <span>→</span><input class="inline-input" maxlength="1" id="ord4" aria-label="Schritt 4">
+              <span>→</span><input class="inline-input" maxlength="1" id="ord5" aria-label="Schritt 5">
+            </div>
+            <button class="small success" style="margin-top:12px" onclick="checkOrder()">Reihenfolge prüfen</button>
+            <div class="feedback" id="orderFb"></div>
+            <label class="checkrow"><input type="checkbox" data-progress="order1"> Ich kann die Begründung in eigenen Worten erklären.</label>
+          </div>
+          <div class="card span-5">
+            <span class="pill violet">Sprachhilfe</span>
+            <h3>So kannst du argumentieren</h3>
+            <p>Da \(g\parallel AB\) gilt, sind passende Stufen- oder Wechselwinkel gleich groß.</p>
+            <p>Die Winkel \(\alpha\), \(\gamma\) und \(\beta\) liegen an der Hilfslinie nebeneinander auf einer Geraden.</p>
+            <p>Ein gestreckter Winkel hat \(180^\circ\). Also gilt \(\alpha+\beta+\gamma=180^\circ\).</p>
+            <details>
+              <summary>Lösung anzeigen</summary>
+              <p>Richtige Reihenfolge: <strong>B → D → E → A → C</strong></p>
+            </details>
+          </div>
+        </div>
+        <div class="footer-nav"><button class="secondary" onclick="showPage('page-begruendung')">← Zurück</button><button onclick="showPage('page-aufgaben')">Weiter zu Station 6 →</button></div>
+      </section>
+
+      <section class="page" id="page-aufgaben" data-title="6 Anwenden">
+        <div class="grid">
+          <div class="card span-12">
+            <span class="pill orange">Station 6</span>
+            <h3>Innenwinkelsumme anwenden</h3>
+            <p>Berechne fehlende Winkel. Gib nur die Zahl ein.</p>
+          </div>
+          <div class="card span-6">
+            <h3>Aufgabe 1</h3>
+            <p>In einem Dreieck gilt: \(\alpha=52^\circ\), \(\beta=73^\circ\). Berechne \(\gamma\).</p>
+            <input type="number" id="a1" inputmode="numeric" placeholder="γ in Grad">
+            <button class="small success" onclick="checkSingle('a1',55,'a1Fb')">Prüfen</button>
+            <div class="feedback" id="a1Fb"></div>
+            <div class="solution"><strong>Lösung:</strong> \(180^\circ-52^\circ-73^\circ=55^\circ\).</div>
+          </div>
+          <div class="card span-6">
+            <h3>Aufgabe 2</h3>
+            <p>In einem Dreieck gilt: \(\alpha=38^\circ\), \(\gamma=91^\circ\). Berechne \(\beta\).</p>
+            <input type="number" id="a2" inputmode="numeric" placeholder="β in Grad">
+            <button class="small success" onclick="checkSingle('a2',51,'a2Fb')">Prüfen</button>
+            <div class="feedback" id="a2Fb"></div>
+            <div class="solution"><strong>Lösung:</strong> \(180^\circ-38^\circ-91^\circ=51^\circ\).</div>
+          </div>
+          <div class="card span-6">
+            <h3>Aufgabe 3</h3>
+            <p>Ein gleichschenkliges Dreieck hat einen Spitzenwinkel von \(46^\circ\). Berechne einen Basiswinkel.</p>
+            <input type="number" id="a3" inputmode="numeric" placeholder="Basiswinkel in Grad">
+            <button class="small success" onclick="checkSingle('a3',67,'a3Fb')">Prüfen</button>
+            <div class="feedback" id="a3Fb"></div>
+            <div class="solution"><strong>Lösung:</strong> \((180^\circ-46^\circ):2=67^\circ\).</div>
+          </div>
+          <div class="card span-6">
+            <h3>Aufgabe 4</h3>
+            <p>Mia sagt: „Ich habe ein Dreieck mit den Winkeln \(80^\circ\), \(70^\circ\) und \(40^\circ\) gezeichnet.“ Hat Mia recht?</p>
+            <textarea id="a4" placeholder="Begründe mit einer Rechnung."></textarea>
+            <button class="small success" onclick="checkTextA4()">Prüfen</button>
+            <div class="feedback" id="a4Fb"></div>
+            <div class="solution"><strong>Lösung:</strong> \(80^\circ+70^\circ+40^\circ=190^\circ\). Mia hat nicht recht, denn ein Dreieck müsste \(180^\circ\) ergeben.</div>
+          </div>
+          <div class="card span-12">
+            <label class="checkrow"><input type="checkbox" data-progress="apply1"> Ich habe die Anwendungsaufgaben bearbeitet und kontrolliert.</label>
+          </div>
+        </div>
+        <div class="footer-nav"><button class="secondary" onclick="showPage('page-ordnen')">← Zurück</button><button onclick="showPage('page-sicherung')">Weiter zur Sicherung →</button></div>
+      </section>
+
+      <section class="page" id="page-sicherung" data-title="Sicherung">
+        <div class="grid">
+          <div class="card span-7">
+            <span class="pill green">Sicherung</span>
+            <h3>Das nehme ich mit</h3>
+            <div class="task green">
+              <p class="math-scroll">\[\boxed{\alpha+\beta+\gamma=180^\circ}\]</p>
+              <p>In jedem Dreieck beträgt die Innenwinkelsumme \(180^\circ\).</p>
+            </div>
+            <h4>Reflexion</h4>
+            <p>Die Zerreißprobe zeigt mir, dass ...</p>
+            <textarea id="ref1"></textarea>
+            <p>Die Skizzenbegründung erklärt mir, warum ...</p>
+            <textarea id="ref2"></textarea>
+            <label class="checkrow"><input type="checkbox" data-progress="reflect1"> Ich habe die Reflexion ausgefüllt.</label>
+          </div>
+          <div class="card span-5">
+            <span class="pill violet">GitHub Pages</span>
+            <h3>Diese Datei online hosten</h3>
+            <div class="hosting">
+              <p><strong>So veröffentlichst du den Lernpfad auf GitHub Pages:</strong></p>
+              <div class="steps">
+                <div class="step">Erstelle auf GitHub ein neues Repository, z. B. <code>innenwinkelsumme-dreieck</code>.</div>
+                <div class="step">Lade diese Datei als <code>index.html</code> in das Repository hoch.</div>
+                <div class="step">Öffne <code>Settings → Pages</code>.</div>
+                <div class="step">Wähle <code>Deploy from a branch</code>, Branch <code>main</code>, Ordner <code>/root</code>.</div>
+                <div class="step">Nach kurzer Zeit ist der Lernpfad unter <code>https://BENUTZERNAME.github.io/innenwinkelsumme-dreieck/</code> erreichbar.</div>
+              </div>
+              <p>Für Google Sites kannst du diesen GitHub-Pages-Link anschließend über <code>Einfügen → Einbetten → URL</code> einbinden.</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-nav"><button class="secondary" onclick="showPage('page-aufgaben')">← Zurück</button><button onclick="showPage('page-start')">Zurück zum Start</button></div>
+      </section>
+    </main>
+  </div>
+
+<script>
+(function(){
+  const pages = Array.from(document.querySelectorAll('.page'));
+  const tabs = document.getElementById('tabs');
+  pages.forEach((p, i)=>{
+    const b = document.createElement('button');
+    b.className = 'tab' + (i===0 ? ' active' : '');
+    b.textContent = p.dataset.title;
+    b.onclick = () => showPage(p.id);
+    tabs.appendChild(b);
+  });
+
+  window.showPage = function(id){
+    pages.forEach(p=>p.classList.toggle('active', p.id===id));
+    Array.from(document.querySelectorAll('.tab')).forEach((t,i)=>t.classList.toggle('active', pages[i].id===id));
+    window.scrollTo({top:0, behavior:'smooth'});
+    localStorage.setItem('iw-page', id);
+    renderMath();
+  };
+
+  const savedPage = localStorage.getItem('iw-page');
+  if(savedPage && document.getElementById(savedPage)) showPage(savedPage);
+
+  const hints = {
+    cut: ['Ein Innenwinkel liegt immer im Inneren des Dreiecks.', 'Markiere jeden Winkel mit einer anderen Farbe.', 'Schneide möglichst genau entlang der Dreiecksseiten.', 'Die Beschriftung hilft dir später beim Begründen.'],
+    tear: ['Die drei Winkel sollen nebeneinanderliegen, nicht übereinander.', 'Ein gestreckter Winkel sieht aus wie eine gerade Linie.', 'Wenn kleine Lücken entstehen, liegt das meistens am Schneiden oder Reißen.', 'Das Experiment zeigt eine Vermutung. Eine Begründung brauchen wir noch.'],
+    satz: ['Achte auf das Wort „jedes“: Der Satz gilt für alle Dreiecke.', 'Ein einzelnes Experiment kann ungenau sein.', 'Eine Begründung erklärt, warum etwas immer gilt.', 'Der Merksatz besteht aus Formel und Worten.'],
+    proof: ['Die Hilfslinie muss durch den Punkt C verlaufen.', 'Die Hilfslinie muss parallel zur Seite AB sein.', 'Die Seiten AC und BC schneiden die parallelen Geraden. Dadurch entstehen Stufen- oder Wechselwinkel.', 'Die drei Winkel bei C liegen zusammen auf einer geraden Linie.']
+  };
+  Object.entries(hints).forEach(([key, arr])=>{
+    const box = document.querySelector(`[data-hints="${key}"] .hintlist`);
+    if(!box) return;
+    arr.forEach((txt, idx)=>{
+      const div = document.createElement('div');
+      div.className = 'hint'; div.dataset.index = idx;
+      div.innerHTML = `<strong>Tipp ${idx+1}:</strong> ${txt}`;
+      box.appendChild(div);
+    });
+  });
+  const hintState = JSON.parse(localStorage.getItem('iw-hints') || '{}');
+  Object.entries(hintState).forEach(([key, count])=> showHints(key, count));
+
+  window.nextHint = function(key){
+    const teacher = document.body.classList.contains('teacher');
+    const count = hintState[key] || 0;
+    const max = (hints[key] || []).length;
+    if(count >= max) return;
+    const last = Number(localStorage.getItem('iw-hint-last-' + key) || 0);
+    const now = Date.now();
+    const wait = teacher ? 0 : 30000 - (now - last);
+    if(wait > 0 && count > 0){
+      startCooldown(key, Math.ceil(wait/1000));
+      return;
+    }
+    hintState[key] = count + 1;
+    localStorage.setItem('iw-hints', JSON.stringify(hintState));
+    localStorage.setItem('iw-hint-last-' + key, now);
+    showHints(key, hintState[key]);
+    if(!teacher && hintState[key] < max) startCooldown(key, 30);
+    renderMath();
+  };
+  function showHints(key, count){
+    document.querySelectorAll(`[data-hints="${key}"] .hint`).forEach((h, i)=> h.classList.toggle('show', i < count));
+  }
+  function startCooldown(key, seconds){
+    const el = document.getElementById('cool-' + key); if(!el) return;
+    let s = seconds; el.textContent = `Nächster Tipp in ${s}s`;
+    const timer = setInterval(()=>{
+      s--; el.textContent = s>0 ? `Nächster Tipp in ${s}s` : '';
+      if(s<=0) clearInterval(timer);
+    }, 1000);
+  }
+
+  window.checkSingle = function(id, expected, fbId){
+    const val = Number(document.getElementById(id).value);
+    const fb = document.getElementById(fbId);
+    if(val === expected){ fb.textContent = 'Richtig.'; fb.className = 'feedback ok'; }
+    else { fb.textContent = 'Noch nicht richtig. Prüfe die Innenwinkelsumme.'; fb.className = 'feedback no'; }
+  };
+  window.checkExperiment = function(){
+    const boxes = Array.from(document.querySelectorAll('.expCheck'));
+    const ok = boxes.every(b => b.checked === (b.dataset.correct === 'true'));
+    const fb = document.getElementById('expFb');
+    fb.textContent = ok ? 'Richtig. Das Experiment ist hilfreich, aber noch keine allgemeine Begründung.' : 'Prüfe noch einmal: Welche Aussagen erklären wirklich, warum ein Beweis nötig ist?';
+    fb.className = 'feedback ' + (ok ? 'ok' : 'no');
+  };
+  window.checkOrder = function(){
+    const got = [1,2,3,4,5].map(n=>document.getElementById('ord'+n).value.trim().toUpperCase()).join('');
+    const fb = document.getElementById('orderFb');
+    if(got === 'BDEAC'){ fb.textContent = 'Richtig: B → D → E → A → C.'; fb.className = 'feedback ok'; }
+    else { fb.textContent = 'Noch nicht. Starte mit der Hilfslinie und ende mit dem Ergebnis.'; fb.className = 'feedback no'; }
+  };
+  window.checkTextA4 = function(){
+    const t = document.getElementById('a4').value.toLowerCase();
+    const ok = (t.includes('190') && (t.includes('nicht') || t.includes('nein')) && t.includes('180'));
+    const fb = document.getElementById('a4Fb');
+    fb.textContent = ok ? 'Richtig begründet.' : 'Nutze die Summe 80° + 70° + 40° und vergleiche mit 180°.';
+    fb.className = 'feedback ' + (ok ? 'ok' : 'no');
+  };
+
+  const progressBoxes = Array.from(document.querySelectorAll('input[type="checkbox"][data-progress]'));
+  const progressState = JSON.parse(localStorage.getItem('iw-progress') || '{}');
+  progressBoxes.forEach(b=>{ b.checked = !!progressState[b.dataset.progress]; b.addEventListener('change', saveProgress); });
+  function saveProgress(){
+    progressBoxes.forEach(b=> progressState[b.dataset.progress] = b.checked);
+    localStorage.setItem('iw-progress', JSON.stringify(progressState)); updateProgress();
+  }
+  function updateProgress(){
+    const stepKeys = ['start','cut1','tear1','satz1','proof1','apply1'];
+    const done = stepKeys.filter(k => progressState[k]).length;
+    document.getElementById('progressText').textContent = `${done} von ${stepKeys.length} Schritten`;
+    document.getElementById('progressBar').style.width = `${Math.round(done / stepKeys.length * 100)}%`;
+  }
+  updateProgress();
+
+  const arrangeBtn = document.getElementById('arrangeBtn');
+  arrangeBtn.addEventListener('click', ()=>{
+    const before = document.getElementById('piecesBefore');
+    const after = document.getElementById('piecesAfter');
+    const isAfter = after.style.display !== 'none';
+    before.style.display = isAfter ? '' : 'none';
+    after.style.display = isAfter ? 'none' : '';
+    arrangeBtn.textContent = isAfter ? 'Winkelecken anlegen' : 'Zurück zum Dreieck';
+  });
+
+  window.proofStep = function(n){
+    document.getElementById('proofLine').style.display = n>=1 ? '' : 'none';
+    document.getElementById('proofAlpha').style.display = n>=2 ? '' : 'none';
+    document.getElementById('proofBeta').style.display = n>=3 ? '' : 'none';
+    document.getElementById('proofStraight').style.display = n>=4 ? '' : 'none';
+  };
+
+  document.getElementById('teacherBtn').addEventListener('click', ()=>{
+    if(document.body.classList.contains('teacher')){
+      document.body.classList.remove('teacher');
+      alert('Lehrerzugang deaktiviert.');
+      return;
+    }
+    const code = prompt('Lehrercode eingeben:');
+    if(code === '1607'){
+      document.body.classList.add('teacher');
+      Object.keys(hints).forEach(k=>{ hintState[k]=hints[k].length; showHints(k,hints[k].length); });
+      localStorage.setItem('iw-hints', JSON.stringify(hintState));
+      document.querySelectorAll('.solution').forEach(s=>s.style.display='block');
+      alert('Lehrerzugang aktiviert. Alle Tipps und Lösungen sind sichtbar.');
+      renderMath();
+    } else if(code !== null){ alert('Code nicht erkannt.'); }
+  });
+  document.getElementById('resetBtn').addEventListener('click', ()=>{
+    if(confirm('Fortschritt, Tipps und Eingaben zurücksetzen?')){
+      Object.keys(localStorage).filter(k=>k.startsWith('iw-')).forEach(k=>localStorage.removeItem(k));
+      location.reload();
+    }
+  });
+  document.getElementById('fullscreenBtn').addEventListener('click', ()=>{
+    const url = new URL(window.location.href);
+    url.searchParams.set('fullscreen','1');
+    window.open(url.toString(), '_blank', 'noopener,noreferrer');
+  });
+
+  // Interaktives Dreieck
+  const svg = document.getElementById('triangleSvg');
+  const ptsGroup = document.getElementById('points');
+  const labelsGroup = document.getElementById('angleLabels');
+  const triPoly = document.getElementById('triPoly');
+  const grid = document.getElementById('gridLines');
+  for(let x=40;x<=580;x+=40){ const l = svgEl('line',{x1:x,y1:20,x2:x,y2:410,stroke:'#cbd5e1','stroke-width':1}); grid.appendChild(l); }
+  for(let y=40;y<=400;y+=40){ const l = svgEl('line',{x1:20,y1:y,x2:600,y2:y,stroke:'#cbd5e1','stroke-width':1}); grid.appendChild(l); }
+  let points = [{name:'A',x:120,y:330,c:'#2563eb'},{name:'B',x:510,y:310,c:'#16a34a'},{name:'C',x:300,y:80,c:'#f97316'}];
+  let dragIndex = null;
+  function svgEl(name, attrs){ const e = document.createElementNS('http://www.w3.org/2000/svg', name); Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,v)); return e; }
+  function angleAt(p, q, r){
+    const v1 = {x:p.x-q.x, y:p.y-q.y}; const v2 = {x:r.x-q.x, y:r.y-q.y};
+    const dot = v1.x*v2.x + v1.y*v2.y;
+    const n1 = Math.hypot(v1.x,v1.y), n2 = Math.hypot(v2.x,v2.y);
+    const cos = Math.max(-1, Math.min(1, dot/(n1*n2)));
+    return Math.acos(cos)*180/Math.PI;
+  }
+  function redrawTriangle(){
+    triPoly.setAttribute('points', points.map(p=>`${p.x},${p.y}`).join(' '));
+    ptsGroup.innerHTML = ''; labelsGroup.innerHTML = '';
+    points.forEach((p,i)=>{
+      const c = svgEl('circle',{cx:p.x,cy:p.y,r:15,fill:p.c,stroke:'#fff','stroke-width':4,class:'dragpoint','data-i':i});
+      const t = svgEl('text',{x:p.x+18,y:p.y-18,fill:p.c,'font-size':26,'font-weight':900}); t.textContent = p.name;
+      ptsGroup.appendChild(c); ptsGroup.appendChild(t);
+    });
+    const A=points[0], B=points[1], C=points[2];
+    const a = angleAt(B,A,C), b = angleAt(A,B,C), c = angleAt(A,C,B);
+    document.getElementById('angA').textContent = a.toFixed(1);
+    document.getElementById('angB').textContent = b.toFixed(1);
+    document.getElementById('angC').textContent = c.toFixed(1);
+    document.getElementById('angSum').textContent = (a+b+c).toFixed(1);
+    const center = {x:(A.x+B.x+C.x)/3, y:(A.y+B.y+C.y)/3};
+    [[A,'α',a,'#2563eb'],[B,'β',b,'#16a34a'],[C,'γ',c,'#f97316']].forEach(([p,lab,ang,col])=>{
+      const tx = p.x + (center.x-p.x)*0.26; const ty = p.y + (center.y-p.y)*0.26;
+      const txt = svgEl('text',{x:tx,y:ty,fill:col,'font-size':24,'font-weight':900,'text-anchor':'middle'}); txt.textContent = `${lab} ${ang.toFixed(0)}°`; labelsGroup.appendChild(txt);
+    });
+  }
+  function localPoint(evt){ const rect = svg.getBoundingClientRect(); const vb = svg.viewBox.baseVal; return {x:(evt.clientX-rect.left)/rect.width*vb.width, y:(evt.clientY-rect.top)/rect.height*vb.height}; }
+  svg.addEventListener('pointerdown', (evt)=>{ const target = evt.target.closest('.dragpoint'); if(!target) return; dragIndex = Number(target.dataset.i); svg.setPointerCapture(evt.pointerId); });
+  svg.addEventListener('pointermove', (evt)=>{ if(dragIndex===null) return; const p=localPoint(evt); points[dragIndex].x=Math.max(50,Math.min(570,p.x)); points[dragIndex].y=Math.max(45,Math.min(380,p.y)); redrawTriangle(); });
+  svg.addEventListener('pointerup', ()=> dragIndex=null);
+  svg.addEventListener('pointercancel', ()=> dragIndex=null);
+  redrawTriangle();
+
+  function renderMath(){
+    if(window.renderMathInElement){
+      renderMathInElement(document.body, {delimiters:[{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true}], throwOnError:false});
+    }
+  }
+  document.addEventListener('DOMContentLoaded', renderMath);
+  window.addEventListener('load', renderMath);
+})();
+</script>
+</body>
+</html>
