@@ -7,28 +7,364 @@
           "name": "Klasse 5",
           "themen": [
             {
-              "titel": "Rauminhalte und Volumen",
-              "beschreibung": "Vergleichen von Körpern, Würfelvolumen, Volumeneinheiten und Umrechnungen.",
+              "titel": "Natürliche Zahlen",
+              "beschreibung": "Materialordner für Natürliche Zahlen im Inhaltsfeld arithmetik-algebra.",
               "tags": [
-                "Volumen",
-                "Einheiten",
-                "Lernspiel"
+                "Mathematik",
+                "Klasse 5",
+                "arithmetik-algebra",
+                "Natürliche Zahlen"
               ],
               "links": [
                 {
-                  "typ": "Lernpfad",
-                  "titel": "Volumen entdecken",
-                  "url": "material/mathematik/klasse-5/volumen/lernpfad-volumen.html"
-                },
+                  "typ": "Test",
+                  "titel": "Testdatei: Natürliche Zahlen",
+                  "url": "material/mathematik/klasse-5/arithmetik-algebra/natuerliche-zahlen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Grundrechenarten",
+              "beschreibung": "Materialordner für Grundrechenarten im Inhaltsfeld arithmetik-algebra.",
+              "tags": [
+                "Mathematik",
+                "Klasse 5",
+                "arithmetik-algebra",
+                "Grundrechenarten"
+              ],
+              "links": [
                 {
-                  "typ": "Lernspiel",
-                  "titel": "Körper vergleichen",
-                  "url": "material/mathematik/klasse-5/volumen/lernspiel-koerper.html"
-                },
+                  "typ": "Test",
+                  "titel": "Testdatei: Grundrechenarten",
+                  "url": "material/mathematik/klasse-5/arithmetik-algebra/grundrechenarten/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Größen und Einheiten",
+              "beschreibung": "Materialordner für Größen und Einheiten im Inhaltsfeld arithmetik-algebra.",
+              "tags": [
+                "Mathematik",
+                "Klasse 5",
+                "arithmetik-algebra",
+                "Größen und Einheiten"
+              ],
+              "links": [
                 {
-                  "typ": "PDF",
-                  "titel": "Arbeitsblatt Volumeneinheiten",
-                  "url": "material/mathematik/klasse-5/volumen/arbeitsblatt-volumen.pdf"
+                  "typ": "Test",
+                  "titel": "Testdatei: Größen und Einheiten",
+                  "url": "material/mathematik/klasse-5/arithmetik-algebra/groessen-und-einheiten/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Brüche und Anteile",
+              "beschreibung": "Materialordner für Brüche und Anteile im Inhaltsfeld arithmetik-algebra.",
+              "tags": [
+                "Mathematik",
+                "Klasse 5",
+                "arithmetik-algebra",
+                "Brüche und Anteile"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Brüche und Anteile",
+                  "url": "material/mathematik/klasse-5/arithmetik-algebra/brueche-und-anteile/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Zusammenhänge darstellen",
+              "beschreibung": "Materialordner für Zusammenhänge darstellen im Inhaltsfeld funktionen.",
+              "tags": [
+                "Mathematik",
+                "Klasse 5",
+                "funktionen",
+                "Zusammenhänge darstellen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Zusammenhänge darstellen",
+                  "url": "material/mathematik/klasse-5/funktionen/zusammenhaenge-darstellen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Figuren und Körper",
+              "beschreibung": "Materialordner für Figuren und Körper im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 5",
+                "geometrie",
+                "Figuren und Körper"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Figuren und Körper",
+                  "url": "material/mathematik/klasse-5/geometrie/figuren-und-koerper/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Koordinatensystem",
+              "beschreibung": "Materialordner für Koordinatensystem im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 5",
+                "geometrie",
+                "Koordinatensystem"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Koordinatensystem",
+                  "url": "material/mathematik/klasse-5/geometrie/koordinatensystem/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Umfang und Flächeninhalt",
+              "beschreibung": "Materialordner für Umfang und Flächeninhalt im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 5",
+                "geometrie",
+                "Umfang und Flächeninhalt"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Umfang und Flächeninhalt",
+                  "url": "material/mathematik/klasse-5/geometrie/umfang-und-flaecheninhalt/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Rauminhalte und Volumen",
+              "beschreibung": "Materialordner für Rauminhalte und Volumen im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 5",
+                "geometrie",
+                "Rauminhalte und Volumen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Rauminhalte und Volumen",
+                  "url": "material/mathematik/klasse-5/geometrie/rauminhalte-und-volumen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Daten erheben und darstellen",
+              "beschreibung": "Materialordner für Daten erheben und darstellen im Inhaltsfeld stochastik.",
+              "tags": [
+                "Mathematik",
+                "Klasse 5",
+                "stochastik",
+                "Daten erheben und darstellen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Daten erheben und darstellen",
+                  "url": "material/mathematik/klasse-5/stochastik/daten-erheben-und-darstellen/test.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Klasse 6",
+          "themen": [
+            {
+              "titel": "Mit Brüchen rechnen",
+              "beschreibung": "Materialordner für Mit Brüchen rechnen im Inhaltsfeld arithmetik-algebra.",
+              "tags": [
+                "Mathematik",
+                "Klasse 6",
+                "arithmetik-algebra",
+                "Mit Brüchen rechnen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Mit Brüchen rechnen",
+                  "url": "material/mathematik/klasse-6/arithmetik-algebra/brueche-rechnen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Dezimalzahlen",
+              "beschreibung": "Materialordner für Dezimalzahlen im Inhaltsfeld arithmetik-algebra.",
+              "tags": [
+                "Mathematik",
+                "Klasse 6",
+                "arithmetik-algebra",
+                "Dezimalzahlen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Dezimalzahlen",
+                  "url": "material/mathematik/klasse-6/arithmetik-algebra/dezimalzahlen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Ganze Zahlen",
+              "beschreibung": "Materialordner für Ganze Zahlen im Inhaltsfeld arithmetik-algebra.",
+              "tags": [
+                "Mathematik",
+                "Klasse 6",
+                "arithmetik-algebra",
+                "Ganze Zahlen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Ganze Zahlen",
+                  "url": "material/mathematik/klasse-6/arithmetik-algebra/ganze-zahlen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Terme und Variablen einfach",
+              "beschreibung": "Materialordner für Terme und Variablen einfach im Inhaltsfeld arithmetik-algebra.",
+              "tags": [
+                "Mathematik",
+                "Klasse 6",
+                "arithmetik-algebra",
+                "Terme und Variablen einfach"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Terme und Variablen einfach",
+                  "url": "material/mathematik/klasse-6/arithmetik-algebra/terme-und-variablen-einfach/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Tabellen und Diagramme",
+              "beschreibung": "Materialordner für Tabellen und Diagramme im Inhaltsfeld funktionen.",
+              "tags": [
+                "Mathematik",
+                "Klasse 6",
+                "funktionen",
+                "Tabellen und Diagramme"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Tabellen und Diagramme",
+                  "url": "material/mathematik/klasse-6/funktionen/tabellen-und-diagramme/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Proportionale Zusammenhänge",
+              "beschreibung": "Materialordner für Proportionale Zusammenhänge im Inhaltsfeld funktionen.",
+              "tags": [
+                "Mathematik",
+                "Klasse 6",
+                "funktionen",
+                "Proportionale Zusammenhänge"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Proportionale Zusammenhänge",
+                  "url": "material/mathematik/klasse-6/funktionen/proportionale-zusammenhaenge/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Winkel",
+              "beschreibung": "Materialordner für Winkel im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 6",
+                "geometrie",
+                "Winkel"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Winkel",
+                  "url": "material/mathematik/klasse-6/geometrie/winkel/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Kreis",
+              "beschreibung": "Materialordner für Kreis im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 6",
+                "geometrie",
+                "Kreis"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Kreis",
+                  "url": "material/mathematik/klasse-6/geometrie/kreis/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Symmetrie",
+              "beschreibung": "Materialordner für Symmetrie im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 6",
+                "geometrie",
+                "Symmetrie"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Symmetrie",
+                  "url": "material/mathematik/klasse-6/geometrie/symmetrie/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Netze und Körper",
+              "beschreibung": "Materialordner für Netze und Körper im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 6",
+                "geometrie",
+                "Netze und Körper"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Netze und Körper",
+                  "url": "material/mathematik/klasse-6/geometrie/netze-und-koerper/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Relative Häufigkeit",
+              "beschreibung": "Materialordner für Relative Häufigkeit im Inhaltsfeld stochastik.",
+              "tags": [
+                "Mathematik",
+                "Klasse 6",
+                "stochastik",
+                "Relative Häufigkeit"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Relative Häufigkeit",
+                  "url": "material/mathematik/klasse-6/stochastik/relative-haeufigkeit/test.html"
                 }
               ]
             }
@@ -38,39 +374,646 @@
           "name": "Klasse 7",
           "themen": [
             {
-              "titel": "Kongruenzsätze und Dreieckskonstruktionen",
-              "beschreibung": "SSS, SWS, WSW und SSW sowie Konstruktionen mit Zirkel und Lineal.",
+              "titel": "Rationale Zahlen",
+              "beschreibung": "Materialordner für Rationale Zahlen im Inhaltsfeld arithmetik-algebra.",
               "tags": [
-                "Geometrie",
-                "Dreiecke",
-                "Kongruenz"
+                "Mathematik",
+                "Klasse 7",
+                "arithmetik-algebra",
+                "Rationale Zahlen"
               ],
               "links": [
                 {
-                  "typ": "Lernpfad",
-                  "titel": "Kongruenzsätze",
-                  "url": "material/mathematik/klasse-7/kongruenzsaetze/lernpfad-kongruenzsaetze.html"
+                  "typ": "Test",
+                  "titel": "Testdatei: Rationale Zahlen",
+                  "url": "material/mathematik/klasse-7/arithmetik-algebra/rationale-zahlen/test.html"
                 }
               ]
             },
             {
-              "titel": "Innenwinkelsumme im Dreieck",
-              "beschreibung": "Entdeckender Lernpfad zur Innenwinkelsumme im Dreieck mit Zerreißprobe, Hilfslinie, Stufenwinkeln und Wechselwinkeln.",
+              "titel": "Terme und Gleichungen",
+              "beschreibung": "Materialordner für Terme und Gleichungen im Inhaltsfeld arithmetik-algebra.",
               "tags": [
-                "Geometrie",
-                "Dreiecke",
-                "Winkel",
-                "Innenwinkelsumme",
-                "Stufenwinkel",
-                "Wechselwinkel",
-                "Begründen",
-                "Beweisen"
+                "Mathematik",
+                "Klasse 7",
+                "arithmetik-algebra",
+                "Terme und Gleichungen"
               ],
               "links": [
                 {
-                  "typ": "Lernpfad",
-                  "titel": "Innenwinkelsumme im Dreieck",
-                  "url": "material/mathematik/klasse-7/innenwinkelsumme/innenwinkelsumme.html"
+                  "typ": "Test",
+                  "titel": "Testdatei: Terme und Gleichungen",
+                  "url": "material/mathematik/klasse-7/arithmetik-algebra/terme-und-gleichungen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Prozentrechnung",
+              "beschreibung": "Materialordner für Prozentrechnung im Inhaltsfeld arithmetik-algebra.",
+              "tags": [
+                "Mathematik",
+                "Klasse 7",
+                "arithmetik-algebra",
+                "Prozentrechnung"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Prozentrechnung",
+                  "url": "material/mathematik/klasse-7/arithmetik-algebra/prozentrechnung/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Proportionale und antiproportionale Zuordnungen",
+              "beschreibung": "Materialordner für Proportionale und antiproportionale Zuordnungen im Inhaltsfeld funktionen.",
+              "tags": [
+                "Mathematik",
+                "Klasse 7",
+                "funktionen",
+                "Proportionale und antiproportionale Zuordnungen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Proportionale und antiproportionale Zuordnungen",
+                  "url": "material/mathematik/klasse-7/funktionen/proportionale-und-antiproportionale-zuordnungen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Lineare Zusammenhänge",
+              "beschreibung": "Materialordner für Lineare Zusammenhänge im Inhaltsfeld funktionen.",
+              "tags": [
+                "Mathematik",
+                "Klasse 7",
+                "funktionen",
+                "Lineare Zusammenhänge"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Lineare Zusammenhänge",
+                  "url": "material/mathematik/klasse-7/funktionen/lineare-zusammenhaenge/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Winkel an Geraden",
+              "beschreibung": "Materialordner für Winkel an Geraden im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 7",
+                "geometrie",
+                "Winkel an Geraden"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Winkel an Geraden",
+                  "url": "material/mathematik/klasse-7/geometrie/winkel-an-geraden/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Dreiecke",
+              "beschreibung": "Materialordner für Dreiecke im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 7",
+                "geometrie",
+                "Dreiecke"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Dreiecke",
+                  "url": "material/mathematik/klasse-7/geometrie/dreiecke/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Kongruenz",
+              "beschreibung": "Materialordner für Kongruenz im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 7",
+                "geometrie",
+                "Kongruenz"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Kongruenz",
+                  "url": "material/mathematik/klasse-7/geometrie/kongruenz/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Innenwinkelsumme",
+              "beschreibung": "Materialordner für Innenwinkelsumme im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 7",
+                "geometrie",
+                "Innenwinkelsumme"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Innenwinkelsumme",
+                  "url": "material/mathematik/klasse-7/geometrie/innenwinkelsumme/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Wahrscheinlichkeiten",
+              "beschreibung": "Materialordner für Wahrscheinlichkeiten im Inhaltsfeld stochastik.",
+              "tags": [
+                "Mathematik",
+                "Klasse 7",
+                "stochastik",
+                "Wahrscheinlichkeiten"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Wahrscheinlichkeiten",
+                  "url": "material/mathematik/klasse-7/stochastik/wahrscheinlichkeiten/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Laplace-Experimente",
+              "beschreibung": "Materialordner für Laplace-Experimente im Inhaltsfeld stochastik.",
+              "tags": [
+                "Mathematik",
+                "Klasse 7",
+                "stochastik",
+                "Laplace-Experimente"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Laplace-Experimente",
+                  "url": "material/mathematik/klasse-7/stochastik/laplace-experimente/test.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Klasse 8",
+          "themen": [
+            {
+              "titel": "Lineare Gleichungen",
+              "beschreibung": "Materialordner für Lineare Gleichungen im Inhaltsfeld arithmetik-algebra.",
+              "tags": [
+                "Mathematik",
+                "Klasse 8",
+                "arithmetik-algebra",
+                "Lineare Gleichungen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Lineare Gleichungen",
+                  "url": "material/mathematik/klasse-8/arithmetik-algebra/lineare-gleichungen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Lineare Gleichungssysteme",
+              "beschreibung": "Materialordner für Lineare Gleichungssysteme im Inhaltsfeld arithmetik-algebra.",
+              "tags": [
+                "Mathematik",
+                "Klasse 8",
+                "arithmetik-algebra",
+                "Lineare Gleichungssysteme"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Lineare Gleichungssysteme",
+                  "url": "material/mathematik/klasse-8/arithmetik-algebra/gleichungssysteme/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Binomische Formeln",
+              "beschreibung": "Materialordner für Binomische Formeln im Inhaltsfeld arithmetik-algebra.",
+              "tags": [
+                "Mathematik",
+                "Klasse 8",
+                "arithmetik-algebra",
+                "Binomische Formeln"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Binomische Formeln",
+                  "url": "material/mathematik/klasse-8/arithmetik-algebra/binomische-formeln/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Lineare Funktionen",
+              "beschreibung": "Materialordner für Lineare Funktionen im Inhaltsfeld funktionen.",
+              "tags": [
+                "Mathematik",
+                "Klasse 8",
+                "funktionen",
+                "Lineare Funktionen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Lineare Funktionen",
+                  "url": "material/mathematik/klasse-8/funktionen/lineare-funktionen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Vierecke",
+              "beschreibung": "Materialordner für Vierecke im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 8",
+                "geometrie",
+                "Vierecke"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Vierecke",
+                  "url": "material/mathematik/klasse-8/geometrie/vierecke/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Geometrische Konstruktionen",
+              "beschreibung": "Materialordner für Geometrische Konstruktionen im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 8",
+                "geometrie",
+                "Geometrische Konstruktionen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Geometrische Konstruktionen",
+                  "url": "material/mathematik/klasse-8/geometrie/geometrische-konstruktionen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Kreis und Winkel",
+              "beschreibung": "Materialordner für Kreis und Winkel im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 8",
+                "geometrie",
+                "Kreis und Winkel"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Kreis und Winkel",
+                  "url": "material/mathematik/klasse-8/geometrie/kreis-und-winkel/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Baumdiagramme",
+              "beschreibung": "Materialordner für Baumdiagramme im Inhaltsfeld stochastik.",
+              "tags": [
+                "Mathematik",
+                "Klasse 8",
+                "stochastik",
+                "Baumdiagramme"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Baumdiagramme",
+                  "url": "material/mathematik/klasse-8/stochastik/baumdiagramme/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Pfadregeln",
+              "beschreibung": "Materialordner für Pfadregeln im Inhaltsfeld stochastik.",
+              "tags": [
+                "Mathematik",
+                "Klasse 8",
+                "stochastik",
+                "Pfadregeln"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Pfadregeln",
+                  "url": "material/mathematik/klasse-8/stochastik/pfadregeln/test.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Klasse 9",
+          "themen": [
+            {
+              "titel": "Potenzen und Wurzeln",
+              "beschreibung": "Materialordner für Potenzen und Wurzeln im Inhaltsfeld arithmetik-algebra.",
+              "tags": [
+                "Mathematik",
+                "Klasse 9",
+                "arithmetik-algebra",
+                "Potenzen und Wurzeln"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Potenzen und Wurzeln",
+                  "url": "material/mathematik/klasse-9/arithmetik-algebra/potenzen-und-wurzeln/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Quadratische Gleichungen",
+              "beschreibung": "Materialordner für Quadratische Gleichungen im Inhaltsfeld arithmetik-algebra.",
+              "tags": [
+                "Mathematik",
+                "Klasse 9",
+                "arithmetik-algebra",
+                "Quadratische Gleichungen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Quadratische Gleichungen",
+                  "url": "material/mathematik/klasse-9/arithmetik-algebra/quadratische-gleichungen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Quadratische Funktionen",
+              "beschreibung": "Materialordner für Quadratische Funktionen im Inhaltsfeld funktionen.",
+              "tags": [
+                "Mathematik",
+                "Klasse 9",
+                "funktionen",
+                "Quadratische Funktionen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Quadratische Funktionen",
+                  "url": "material/mathematik/klasse-9/funktionen/quadratische-funktionen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Exponentielle Funktionen",
+              "beschreibung": "Materialordner für Exponentielle Funktionen im Inhaltsfeld funktionen.",
+              "tags": [
+                "Mathematik",
+                "Klasse 9",
+                "funktionen",
+                "Exponentielle Funktionen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Exponentielle Funktionen",
+                  "url": "material/mathematik/klasse-9/funktionen/exponentielle-funktionen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Satz des Pythagoras",
+              "beschreibung": "Materialordner für Satz des Pythagoras im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 9",
+                "geometrie",
+                "Satz des Pythagoras"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Satz des Pythagoras",
+                  "url": "material/mathematik/klasse-9/geometrie/satz-des-pythagoras/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Ähnlichkeit und Strahlensätze",
+              "beschreibung": "Materialordner für Ähnlichkeit und Strahlensätze im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 9",
+                "geometrie",
+                "Ähnlichkeit und Strahlensätze"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Ähnlichkeit und Strahlensätze",
+                  "url": "material/mathematik/klasse-9/geometrie/aehnlichkeit-und-strahlensaetze/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Kreis und Körper",
+              "beschreibung": "Materialordner für Kreis und Körper im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 9",
+                "geometrie",
+                "Kreis und Körper"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Kreis und Körper",
+                  "url": "material/mathematik/klasse-9/geometrie/kreis-und-koerper/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Statistische Kenngrößen",
+              "beschreibung": "Materialordner für Statistische Kenngrößen im Inhaltsfeld stochastik.",
+              "tags": [
+                "Mathematik",
+                "Klasse 9",
+                "stochastik",
+                "Statistische Kenngrößen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Statistische Kenngrößen",
+                  "url": "material/mathematik/klasse-9/stochastik/statistische-kenngroessen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Simulationen",
+              "beschreibung": "Materialordner für Simulationen im Inhaltsfeld stochastik.",
+              "tags": [
+                "Mathematik",
+                "Klasse 9",
+                "stochastik",
+                "Simulationen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Simulationen",
+                  "url": "material/mathematik/klasse-9/stochastik/simulationen/test.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Klasse 10",
+          "themen": [
+            {
+              "titel": "Exponenten und Logarithmen",
+              "beschreibung": "Materialordner für Exponenten und Logarithmen im Inhaltsfeld arithmetik-algebra.",
+              "tags": [
+                "Mathematik",
+                "Klasse 10",
+                "arithmetik-algebra",
+                "Exponenten und Logarithmen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Exponenten und Logarithmen",
+                  "url": "material/mathematik/klasse-10/arithmetik-algebra/exponenten-und-logarithmen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Formeln und Terme",
+              "beschreibung": "Materialordner für Formeln und Terme im Inhaltsfeld arithmetik-algebra.",
+              "tags": [
+                "Mathematik",
+                "Klasse 10",
+                "arithmetik-algebra",
+                "Formeln und Terme"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Formeln und Terme",
+                  "url": "material/mathematik/klasse-10/arithmetik-algebra/formeln-und-terme/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Trigonometrische Funktionen",
+              "beschreibung": "Materialordner für Trigonometrische Funktionen im Inhaltsfeld funktionen.",
+              "tags": [
+                "Mathematik",
+                "Klasse 10",
+                "funktionen",
+                "Trigonometrische Funktionen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Trigonometrische Funktionen",
+                  "url": "material/mathematik/klasse-10/funktionen/trigonometrische-funktionen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Wachstumsprozesse",
+              "beschreibung": "Materialordner für Wachstumsprozesse im Inhaltsfeld funktionen.",
+              "tags": [
+                "Mathematik",
+                "Klasse 10",
+                "funktionen",
+                "Wachstumsprozesse"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Wachstumsprozesse",
+                  "url": "material/mathematik/klasse-10/funktionen/wachstumsprozesse/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Trigonometrie",
+              "beschreibung": "Materialordner für Trigonometrie im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 10",
+                "geometrie",
+                "Trigonometrie"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Trigonometrie",
+                  "url": "material/mathematik/klasse-10/geometrie/trigonometrie/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Körper berechnen",
+              "beschreibung": "Materialordner für Körper berechnen im Inhaltsfeld geometrie.",
+              "tags": [
+                "Mathematik",
+                "Klasse 10",
+                "geometrie",
+                "Körper berechnen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Körper berechnen",
+                  "url": "material/mathematik/klasse-10/geometrie/koerper-berechnen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Bedingte Wahrscheinlichkeit",
+              "beschreibung": "Materialordner für Bedingte Wahrscheinlichkeit im Inhaltsfeld stochastik.",
+              "tags": [
+                "Mathematik",
+                "Klasse 10",
+                "stochastik",
+                "Bedingte Wahrscheinlichkeit"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Bedingte Wahrscheinlichkeit",
+                  "url": "material/mathematik/klasse-10/stochastik/bedingte-wahrscheinlichkeit/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Vierfeldertafeln",
+              "beschreibung": "Materialordner für Vierfeldertafeln im Inhaltsfeld stochastik.",
+              "tags": [
+                "Mathematik",
+                "Klasse 10",
+                "stochastik",
+                "Vierfeldertafeln"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Vierfeldertafeln",
+                  "url": "material/mathematik/klasse-10/stochastik/vierfeldertafeln/test.html"
                 }
               ]
             }
@@ -80,18 +1023,104 @@
           "name": "EF",
           "themen": [
             {
-              "titel": "Transformationen von Funktionen",
-              "beschreibung": "Verschieben, Strecken, Spiegeln und Kombinieren von Funktionstransformationen.",
+              "titel": "Funktionen Grundlagen",
+              "beschreibung": "Materialordner für Funktionen Grundlagen im Inhaltsfeld funktionen-und-analysis.",
               "tags": [
-                "Funktionen",
-                "Transformationen",
-                "EF"
+                "Mathematik",
+                "EF",
+                "funktionen-und-analysis",
+                "Funktionen Grundlagen"
               ],
               "links": [
                 {
-                  "typ": "Lernpfad",
-                  "titel": "Transformationen interaktiv",
-                  "url": "material/mathematik/ef/funktionen/lernpfad-transformationen.html"
+                  "typ": "Test",
+                  "titel": "Testdatei: Funktionen Grundlagen",
+                  "url": "material/mathematik/ef/funktionen-und-analysis/funktionen-grundlagen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Transformationen von Funktionen",
+              "beschreibung": "Materialordner für Transformationen von Funktionen im Inhaltsfeld funktionen-und-analysis.",
+              "tags": [
+                "Mathematik",
+                "EF",
+                "funktionen-und-analysis",
+                "Transformationen von Funktionen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Transformationen von Funktionen",
+                  "url": "material/mathematik/ef/funktionen-und-analysis/transformationen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Einführung Differentialrechnung",
+              "beschreibung": "Materialordner für Einführung Differentialrechnung im Inhaltsfeld funktionen-und-analysis.",
+              "tags": [
+                "Mathematik",
+                "EF",
+                "funktionen-und-analysis",
+                "Einführung Differentialrechnung"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Einführung Differentialrechnung",
+                  "url": "material/mathematik/ef/funktionen-und-analysis/differentialrechnung-einfuehrung/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Ganzrationale Funktionen",
+              "beschreibung": "Materialordner für Ganzrationale Funktionen im Inhaltsfeld funktionen-und-analysis.",
+              "tags": [
+                "Mathematik",
+                "EF",
+                "funktionen-und-analysis",
+                "Ganzrationale Funktionen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Ganzrationale Funktionen",
+                  "url": "material/mathematik/ef/funktionen-und-analysis/ganzrationale-funktionen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Vektoren Grundlagen",
+              "beschreibung": "Materialordner für Vektoren Grundlagen im Inhaltsfeld analytische-geometrie-und-lineare-algebra.",
+              "tags": [
+                "Mathematik",
+                "EF",
+                "analytische-geometrie-und-lineare-algebra",
+                "Vektoren Grundlagen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Vektoren Grundlagen",
+                  "url": "material/mathematik/ef/analytische-geometrie-und-lineare-algebra/vektoren-grundlagen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Daten und Wahrscheinlichkeiten",
+              "beschreibung": "Materialordner für Daten und Wahrscheinlichkeiten im Inhaltsfeld stochastik.",
+              "tags": [
+                "Mathematik",
+                "EF",
+                "stochastik",
+                "Daten und Wahrscheinlichkeiten"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Daten und Wahrscheinlichkeiten",
+                  "url": "material/mathematik/ef/stochastik/daten-und-wahrscheinlichkeiten/test.html"
                 }
               ]
             }
@@ -99,19 +1128,414 @@
         },
         {
           "name": "Q1 GK",
-          "themen": []
+          "themen": [
+            {
+              "titel": "Differentialrechnung",
+              "beschreibung": "Materialordner für Differentialrechnung im Inhaltsfeld funktionen-und-analysis.",
+              "tags": [
+                "Mathematik",
+                "Q1 GK",
+                "funktionen-und-analysis",
+                "Differentialrechnung"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Differentialrechnung",
+                  "url": "material/mathematik/q1-gk/funktionen-und-analysis/differentialrechnung/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Integralrechnung",
+              "beschreibung": "Materialordner für Integralrechnung im Inhaltsfeld funktionen-und-analysis.",
+              "tags": [
+                "Mathematik",
+                "Q1 GK",
+                "funktionen-und-analysis",
+                "Integralrechnung"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Integralrechnung",
+                  "url": "material/mathematik/q1-gk/funktionen-und-analysis/integralrechnung/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Vektoren, Geraden und Ebenen",
+              "beschreibung": "Materialordner für Vektoren, Geraden und Ebenen im Inhaltsfeld analytische-geometrie-und-lineare-algebra.",
+              "tags": [
+                "Mathematik",
+                "Q1 GK",
+                "analytische-geometrie-und-lineare-algebra",
+                "Vektoren, Geraden und Ebenen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Vektoren, Geraden und Ebenen",
+                  "url": "material/mathematik/q1-gk/analytische-geometrie-und-lineare-algebra/vektoren-geraden-ebenen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Binomialverteilung",
+              "beschreibung": "Materialordner für Binomialverteilung im Inhaltsfeld stochastik.",
+              "tags": [
+                "Mathematik",
+                "Q1 GK",
+                "stochastik",
+                "Binomialverteilung"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Binomialverteilung",
+                  "url": "material/mathematik/q1-gk/stochastik/binomialverteilung/test.html"
+                }
+              ]
+            }
+          ]
         },
         {
           "name": "Q1 LK",
-          "themen": []
+          "themen": [
+            {
+              "titel": "Differentialrechnung",
+              "beschreibung": "Materialordner für Differentialrechnung im Inhaltsfeld funktionen-und-analysis.",
+              "tags": [
+                "Mathematik",
+                "Q1 LK",
+                "funktionen-und-analysis",
+                "Differentialrechnung"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Differentialrechnung",
+                  "url": "material/mathematik/q1-lk/funktionen-und-analysis/differentialrechnung/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Integralrechnung",
+              "beschreibung": "Materialordner für Integralrechnung im Inhaltsfeld funktionen-und-analysis.",
+              "tags": [
+                "Mathematik",
+                "Q1 LK",
+                "funktionen-und-analysis",
+                "Integralrechnung"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Integralrechnung",
+                  "url": "material/mathematik/q1-lk/funktionen-und-analysis/integralrechnung/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Exponentialfunktionen",
+              "beschreibung": "Materialordner für Exponentialfunktionen im Inhaltsfeld funktionen-und-analysis.",
+              "tags": [
+                "Mathematik",
+                "Q1 LK",
+                "funktionen-und-analysis",
+                "Exponentialfunktionen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Exponentialfunktionen",
+                  "url": "material/mathematik/q1-lk/funktionen-und-analysis/exponentialfunktionen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Vektoren, Geraden und Ebenen",
+              "beschreibung": "Materialordner für Vektoren, Geraden und Ebenen im Inhaltsfeld analytische-geometrie-und-lineare-algebra.",
+              "tags": [
+                "Mathematik",
+                "Q1 LK",
+                "analytische-geometrie-und-lineare-algebra",
+                "Vektoren, Geraden und Ebenen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Vektoren, Geraden und Ebenen",
+                  "url": "material/mathematik/q1-lk/analytische-geometrie-und-lineare-algebra/vektoren-geraden-ebenen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Lagebeziehungen und Abstände",
+              "beschreibung": "Materialordner für Lagebeziehungen und Abstände im Inhaltsfeld analytische-geometrie-und-lineare-algebra.",
+              "tags": [
+                "Mathematik",
+                "Q1 LK",
+                "analytische-geometrie-und-lineare-algebra",
+                "Lagebeziehungen und Abstände"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Lagebeziehungen und Abstände",
+                  "url": "material/mathematik/q1-lk/analytische-geometrie-und-lineare-algebra/lagebeziehungen-und-abstaende/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Binomialverteilung",
+              "beschreibung": "Materialordner für Binomialverteilung im Inhaltsfeld stochastik.",
+              "tags": [
+                "Mathematik",
+                "Q1 LK",
+                "stochastik",
+                "Binomialverteilung"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Binomialverteilung",
+                  "url": "material/mathematik/q1-lk/stochastik/binomialverteilung/test.html"
+                }
+              ]
+            }
+          ]
         },
         {
           "name": "Q2 GK",
-          "themen": []
+          "themen": [
+            {
+              "titel": "Funktionsuntersuchung",
+              "beschreibung": "Materialordner für Funktionsuntersuchung im Inhaltsfeld funktionen-und-analysis.",
+              "tags": [
+                "Mathematik",
+                "Q2 GK",
+                "funktionen-und-analysis",
+                "Funktionsuntersuchung"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Funktionsuntersuchung",
+                  "url": "material/mathematik/q2-gk/funktionen-und-analysis/funktionsuntersuchung/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Anwendungen der Analysis",
+              "beschreibung": "Materialordner für Anwendungen der Analysis im Inhaltsfeld funktionen-und-analysis.",
+              "tags": [
+                "Mathematik",
+                "Q2 GK",
+                "funktionen-und-analysis",
+                "Anwendungen der Analysis"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Anwendungen der Analysis",
+                  "url": "material/mathematik/q2-gk/funktionen-und-analysis/anwendungen-der-analysis/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Skalarprodukt und Winkel",
+              "beschreibung": "Materialordner für Skalarprodukt und Winkel im Inhaltsfeld analytische-geometrie-und-lineare-algebra.",
+              "tags": [
+                "Mathematik",
+                "Q2 GK",
+                "analytische-geometrie-und-lineare-algebra",
+                "Skalarprodukt und Winkel"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Skalarprodukt und Winkel",
+                  "url": "material/mathematik/q2-gk/analytische-geometrie-und-lineare-algebra/skalarprodukt-und-winkel/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Normalverteilung",
+              "beschreibung": "Materialordner für Normalverteilung im Inhaltsfeld stochastik.",
+              "tags": [
+                "Mathematik",
+                "Q2 GK",
+                "stochastik",
+                "Normalverteilung"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Normalverteilung",
+                  "url": "material/mathematik/q2-gk/stochastik/normalverteilung/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Hypothesentests",
+              "beschreibung": "Materialordner für Hypothesentests im Inhaltsfeld stochastik.",
+              "tags": [
+                "Mathematik",
+                "Q2 GK",
+                "stochastik",
+                "Hypothesentests"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Hypothesentests",
+                  "url": "material/mathematik/q2-gk/stochastik/hypothesentests/test.html"
+                }
+              ]
+            }
+          ]
         },
         {
           "name": "Q2 LK",
-          "themen": []
+          "themen": [
+            {
+              "titel": "Funktionsuntersuchung",
+              "beschreibung": "Materialordner für Funktionsuntersuchung im Inhaltsfeld funktionen-und-analysis.",
+              "tags": [
+                "Mathematik",
+                "Q2 LK",
+                "funktionen-und-analysis",
+                "Funktionsuntersuchung"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Funktionsuntersuchung",
+                  "url": "material/mathematik/q2-lk/funktionen-und-analysis/funktionsuntersuchung/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Anwendungen der Analysis",
+              "beschreibung": "Materialordner für Anwendungen der Analysis im Inhaltsfeld funktionen-und-analysis.",
+              "tags": [
+                "Mathematik",
+                "Q2 LK",
+                "funktionen-und-analysis",
+                "Anwendungen der Analysis"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Anwendungen der Analysis",
+                  "url": "material/mathematik/q2-lk/funktionen-und-analysis/anwendungen-der-analysis/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Verkettete Funktionen",
+              "beschreibung": "Materialordner für Verkettete Funktionen im Inhaltsfeld funktionen-und-analysis.",
+              "tags": [
+                "Mathematik",
+                "Q2 LK",
+                "funktionen-und-analysis",
+                "Verkettete Funktionen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Verkettete Funktionen",
+                  "url": "material/mathematik/q2-lk/funktionen-und-analysis/verkettete-funktionen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Skalarprodukt und Winkel",
+              "beschreibung": "Materialordner für Skalarprodukt und Winkel im Inhaltsfeld analytische-geometrie-und-lineare-algebra.",
+              "tags": [
+                "Mathematik",
+                "Q2 LK",
+                "analytische-geometrie-und-lineare-algebra",
+                "Skalarprodukt und Winkel"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Skalarprodukt und Winkel",
+                  "url": "material/mathematik/q2-lk/analytische-geometrie-und-lineare-algebra/skalarprodukt-und-winkel/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Abstandsprobleme",
+              "beschreibung": "Materialordner für Abstandsprobleme im Inhaltsfeld analytische-geometrie-und-lineare-algebra.",
+              "tags": [
+                "Mathematik",
+                "Q2 LK",
+                "analytische-geometrie-und-lineare-algebra",
+                "Abstandsprobleme"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Abstandsprobleme",
+                  "url": "material/mathematik/q2-lk/analytische-geometrie-und-lineare-algebra/abstandsprobleme/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Normalverteilung",
+              "beschreibung": "Materialordner für Normalverteilung im Inhaltsfeld stochastik.",
+              "tags": [
+                "Mathematik",
+                "Q2 LK",
+                "stochastik",
+                "Normalverteilung"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Normalverteilung",
+                  "url": "material/mathematik/q2-lk/stochastik/normalverteilung/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Hypothesentests",
+              "beschreibung": "Materialordner für Hypothesentests im Inhaltsfeld stochastik.",
+              "tags": [
+                "Mathematik",
+                "Q2 LK",
+                "stochastik",
+                "Hypothesentests"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Hypothesentests",
+                  "url": "material/mathematik/q2-lk/stochastik/hypothesentests/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Stochastische Prozesse",
+              "beschreibung": "Materialordner für Stochastische Prozesse im Inhaltsfeld stochastik.",
+              "tags": [
+                "Mathematik",
+                "Q2 LK",
+                "stochastik",
+                "Stochastische Prozesse"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Stochastische Prozesse",
+                  "url": "material/mathematik/q2-lk/stochastik/stochastische-prozesse/test.html"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -122,18 +1546,129 @@
           "name": "Klasse 5",
           "themen": [
             {
-              "titel": "Wärme und Teilchenmodell",
-              "beschreibung": "Thermometer, Ausdehnung von Stoffen, Aggregatzustände und Anomalie des Wassers.",
+              "titel": "Temperatur und Wärme",
+              "beschreibung": "IF 1: Thermometer, Temperaturmessung, Wärmeausdehnung, Wärmetransport, Wärmedämmung sowie Aggregatzustände und ihre Veränderungen.",
               "tags": [
+                "Physik",
+                "Klasse 5",
+                "IF 1",
+                "Temperatur",
                 "Wärme",
-                "Teilchenmodell",
-                "Experiment"
+                "Thermometer",
+                "Wärmetransport",
+                "Aggregatzustände"
               ],
               "links": [
                 {
-                  "typ": "Lernpfad",
-                  "titel": "Wärme entdecken",
-                  "url": "material/physik/klasse-5/waerme/lernpfad-waerme.html"
+                  "typ": "Test",
+                  "titel": "Testdatei: Temperatur und Wärme",
+                  "url": "material/physik/klasse-5/if-1/temperatur-und-waerme/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Elektrischer Strom und Magnetismus",
+              "beschreibung": "IF 2: Magnetpole, magnetische Felder, Stromkreise, Spannungsquellen, Leiter und Nichtleiter, Wärme- und magnetische Wirkung des Stroms sowie Gefahren durch Elektrizität.",
+              "tags": [
+                "Physik",
+                "Klasse 5",
+                "IF 2",
+                "Elektrizität",
+                "Magnetismus",
+                "Stromkreis",
+                "Schaltung",
+                "Sicherheit"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Elektrischer Strom und Magnetismus",
+                  "url": "material/physik/klasse-5/if-2/elektrischer-strom-und-magnetismus/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Schall",
+              "beschreibung": "IF 3: Tonhöhe und Lautstärke, Schallausbreitung, Schallquellen und Schallempfänger, Reflexion und Absorption, Lärm und Lärmschutz sowie Ultraschall.",
+              "tags": [
+                "Physik",
+                "Klasse 5",
+                "IF 3",
+                "Schall",
+                "Lärm",
+                "Ultraschall",
+                "Sender-Empfänger-Modell"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Schall",
+                  "url": "material/physik/klasse-5/if-3/schall/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Licht",
+              "beschreibung": "IF 4: Lichtquellen und Lichtempfänger, Modell des Lichtstrahls, Streuung, Reflexion, Transmission, Absorption, Schattenbildung und Abbildungen.",
+              "tags": [
+                "Physik",
+                "Klasse 5",
+                "IF 4",
+                "Licht",
+                "Lichtstrahl",
+                "Schatten",
+                "Reflexion",
+                "Abbildung"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Licht",
+                  "url": "material/physik/klasse-5/if-4/licht/test.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Klasse 6",
+          "themen": [
+            {
+              "titel": "Physik im schulinternen Lehrplan nicht eigenständig vorgesehen",
+              "beschreibung": "Im angegebenen schulinternen Lehrplan wird Physik in Klasse 6 nicht als eigenständiges Fach mit Unterrichtsvorhaben ausgewiesen.",
+              "tags": [
+                "Physik",
+                "Klasse 6",
+                "Platzhalter",
+                "nicht vorgesehen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Physik im schulinternen Lehrplan nicht eigenständig vorgesehen",
+                  "url": "material/physik/klasse-6/sonstiges/physik-nicht-vorgesehen/test.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Klasse 7",
+          "themen": [
+            {
+              "titel": "Physik im schulinternen Lehrplan nicht eigenständig vorgesehen",
+              "beschreibung": "Im angegebenen schulinternen Lehrplan wird Physik in Klasse 7 nicht als eigenständiges Fach mit Unterrichtsvorhaben ausgewiesen.",
+              "tags": [
+                "Physik",
+                "Klasse 7",
+                "Platzhalter",
+                "nicht vorgesehen"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Physik im schulinternen Lehrplan nicht eigenständig vorgesehen",
+                  "url": "material/physik/klasse-7/sonstiges/physik-nicht-vorgesehen/test.html"
                 }
               ]
             }
@@ -143,18 +1678,356 @@
           "name": "Klasse 8",
           "themen": [
             {
-              "titel": "Astronomie und Radioteleskop",
-              "beschreibung": "Radioteleskop Effelsberg, elektromagnetische Strahlung und Schwarze Löcher.",
+              "titel": "Optische Instrumente",
+              "beschreibung": "IF 5: Reflexionsgesetz, Planspiegel, Brechung, optische Dichte, Totalreflexion, Spektralzerlegung, Linsen, Auge, optische Instrumente, Farbsehen und digitale Farbmodelle.",
               "tags": [
-                "Astronomie",
-                "Radioteleskop",
-                "Effelsberg"
+                "Physik",
+                "Klasse 8",
+                "IF 5",
+                "Optik",
+                "optische Instrumente",
+                "Brechung",
+                "Linsen",
+                "Auge",
+                "Farbmodelle"
               ],
               "links": [
                 {
-                  "typ": "Lernpfad",
-                  "titel": "Radioteleskop Effelsberg",
-                  "url": "material/physik/klasse-8/astronomie/lernpfad-radioteleskop.html"
+                  "typ": "Test",
+                  "titel": "Testdatei: Optische Instrumente",
+                  "url": "material/physik/klasse-8/if-5/optische-instrumente/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Sterne und Weltall",
+              "beschreibung": "IF 6: Mondphasen, Finsternisse, Jahreszeiten, Sonnensystem, Himmelsobjekte, Sternentwicklung, Lichtjahr, Schwerelosigkeit und Raumfahrt.",
+              "tags": [
+                "Physik",
+                "Klasse 8",
+                "IF 6",
+                "Astronomie",
+                "Sterne",
+                "Weltall",
+                "Sonnensystem",
+                "Lichtjahr",
+                "Raumfahrt"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Sterne und Weltall",
+                  "url": "material/physik/klasse-8/if-6/sterne-und-weltall/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Bewegung, Kraft und Energie: Bewegungen",
+              "beschreibung": "IF 7: Bewegungsarten, Geschwindigkeit, Beschleunigung, mittlere und momentane Geschwindigkeit sowie Berechnungen bei gleichförmigen Bewegungen.",
+              "tags": [
+                "Physik",
+                "Klasse 8",
+                "IF 7",
+                "Bewegung",
+                "Geschwindigkeit",
+                "Beschleunigung",
+                "Diagramme",
+                "Videoanalyse"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Bewegung, Kraft und Energie: Bewegungen",
+                  "url": "material/physik/klasse-8/if-7/bewegung-kraft-energie-bewegungen/test.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Klasse 9",
+          "themen": [
+            {
+              "titel": "Bewegung, Kraft und Energie: Kräfte, Maschinen und Energie",
+              "beschreibung": "IF 7: Kraft als vektorielle Größe, Kräfteaddition, Kraft und Gegenkraft, Kräftegleichgewicht, Gewichtskraft und Masse, einfache Maschinen, Energieformen, Energieerhaltung, Energie und Leistung.",
+              "tags": [
+                "Physik",
+                "Klasse 9",
+                "IF 7",
+                "Kraft",
+                "Energie",
+                "Leistung",
+                "Hebel",
+                "Flaschenzug",
+                "Kräfteaddition"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Bewegung, Kraft und Energie: Kräfte, Maschinen und Energie",
+                  "url": "material/physik/klasse-9/if-7/bewegung-kraft-energie-kraefte-und-energie/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Elektrizität: Elektrostatik und einfache Stromkreise",
+              "beschreibung": "IF 9: Reibungselektrizität, elektrische Ladungen, Elektroskop, Elektronen-Atomrumpf-Modell, elektrische Felder, Leitungseigenschaften, elektrischer Strom, einfache Stromkreise, Stromstärke und Spannung.",
+              "tags": [
+                "Physik",
+                "Klasse 9",
+                "IF 9",
+                "Elektrizität",
+                "Elektrostatik",
+                "Ladung",
+                "elektrisches Feld",
+                "Stromkreis",
+                "Spannung",
+                "Stromstärke"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Elektrizität: Elektrostatik und einfache Stromkreise",
+                  "url": "material/physik/klasse-9/if-9/elektrizitaet-elektrostatik-und-stromkreise/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Elektrizität: Widerstand, Ohmsches Gesetz und elektrische Energie",
+              "beschreibung": "IF 9: elektrischer Widerstand, Ohmsches Gesetz, Reihen- und Parallelschaltungen, Wirkung von Elektrizität auf den Körper, Hausinstallation, Sicherheit, elektrische Energie und Leistung, Energiekosten.",
+              "tags": [
+                "Physik",
+                "Klasse 9",
+                "IF 9",
+                "Widerstand",
+                "Ohmsches Gesetz",
+                "Reihenschaltung",
+                "Parallelschaltung",
+                "elektrische Leistung",
+                "Sicherheit"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Elektrizität: Widerstand, Ohmsches Gesetz und elektrische Energie",
+                  "url": "material/physik/klasse-9/if-9/elektrizitaet-widerstand-ohmsches-gesetz-und-energie/test.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Klasse 10",
+          "themen": [
+            {
+              "titel": "Druck und Auftrieb",
+              "beschreibung": "IF 8: Druck und Dichte in Flüssigkeiten und Gasen, Formeln für Druck und Dichte, Messverfahren, Auftriebskräfte, Archimedisches Prinzip, Schweredruck, Luftdruck, Steigen, Sinken und Schweben.",
+              "tags": [
+                "Physik",
+                "Klasse 10",
+                "IF 8",
+                "Druck",
+                "Dichte",
+                "Auftrieb",
+                "Archimedisches Prinzip",
+                "Schweredruck",
+                "Luftdruck"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Druck und Auftrieb",
+                  "url": "material/physik/klasse-10/if-8/druck-und-auftrieb/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Ionisierende Strahlung und Kernenergie",
+              "beschreibung": "IF 10: Aufbau von Atomen, Atomkernen und Isotopen, radioaktiver Zerfall, Halbwertszeit, Aktivität, natürliche Radioaktivität, Alpha-, Beta-, Gamma- und Röntgenstrahlung, Nachweis, Kettenreaktion, Anwendungen, Gefährdungen und Strahlenschutz.",
+              "tags": [
+                "Physik",
+                "Klasse 10",
+                "IF 10",
+                "Radioaktivität",
+                "Halbwertszeit",
+                "Kernenergie",
+                "Strahlenschutz",
+                "Kernfusion",
+                "Kernspaltung"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Ionisierende Strahlung und Kernenergie",
+                  "url": "material/physik/klasse-10/if-10/ionisierende-strahlung-und-kernenergie/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Energieversorgung",
+              "beschreibung": "IF 11: Induktion, Generator, Wechselspannung, Transformator, Elektromotor, Energieübertragung, Energieentwertung, Wirkungsgrad, Kraftwerke, regenerative Energiequellen, Nachhaltigkeit und Energiespeicherung.",
+              "tags": [
+                "Physik",
+                "Klasse 10",
+                "IF 11",
+                "Energieversorgung",
+                "Induktion",
+                "Generator",
+                "Transformator",
+                "Kraftwerk",
+                "Nachhaltigkeit",
+                "Energiespeicher"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Energieversorgung",
+                  "url": "material/physik/klasse-10/if-11/energieversorgung/test.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "EF",
+          "themen": [
+            {
+              "titel": "Kinematik",
+              "beschreibung": "Gleichförmige und gleichmäßig beschleunigte Bewegungen, Auswertung von Messdaten, lineare Regression, Linearisierung und Messunsicherheiten.",
+              "tags": [
+                "Physik",
+                "EF",
+                "Kinematik",
+                "Bewegung",
+                "Regression",
+                "Messdaten",
+                "Messunsicherheit"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Kinematik",
+                  "url": "material/physik/ef/mechanik/kinematik/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Fall und Wurf",
+              "beschreibung": "Freier Fall, vektorielle Größen, Komponentenzerlegung, Vektoraddition und waagerechter Wurf.",
+              "tags": [
+                "Physik",
+                "EF",
+                "Fall",
+                "Wurf",
+                "Freier Fall",
+                "waagerechter Wurf",
+                "Vektoren"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Fall und Wurf",
+                  "url": "material/physik/ef/mechanik/fall-und-wurf/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Dynamik",
+              "beschreibung": "Kraft, Gewichtskraft, Newtonsche Gesetze, Reibungskräfte, Bremsbeschleunigung, Bremswege und Sicherheitsvorkehrungen im Auto.",
+              "tags": [
+                "Physik",
+                "EF",
+                "Dynamik",
+                "Newton",
+                "Kraft",
+                "Reibung",
+                "Bremsweg",
+                "Auto"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Dynamik",
+                  "url": "material/physik/ef/mechanik/dynamik/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Erhaltungssätze",
+              "beschreibung": "Mechanische Energieformen, Energieerhaltung, mechanische Leistung und Arbeit, Reibungsarbeit, Impuls und Impulserhaltung sowie elastische und unelastische Stöße.",
+              "tags": [
+                "Physik",
+                "EF",
+                "Energie",
+                "Arbeit",
+                "Leistung",
+                "Impuls",
+                "Stoß",
+                "Erhaltungssätze"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Erhaltungssätze",
+                  "url": "material/physik/ef/mechanik/erhaltungssaetze/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Kreisbewegungen",
+              "beschreibung": "Grundgrößen zur Beschreibung von Kreisbewegungen, Bahngeschwindigkeit, Winkelgeschwindigkeit und Zentripetalkraft.",
+              "tags": [
+                "Physik",
+                "EF",
+                "Kreisbewegung",
+                "Bahngeschwindigkeit",
+                "Winkelgeschwindigkeit",
+                "Zentripetalkraft"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Kreisbewegungen",
+                  "url": "material/physik/ef/mechanik/kreisbewegungen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Gravitation und Planetenbewegungen",
+              "beschreibung": "Geozentrisches und heliozentrisches Weltbild, Kepler-Gesetze, Gravitationsgesetz, Cavendish-Experiment und Gravitationsfeld der Erde.",
+              "tags": [
+                "Physik",
+                "EF",
+                "Gravitation",
+                "Kepler",
+                "Planetenbewegung",
+                "Weltbilder",
+                "Gravitationsfeld"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Gravitation und Planetenbewegungen",
+                  "url": "material/physik/ef/mechanik/gravitation-und-planetenbewegungen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Relativität",
+              "beschreibung": "Bedeutung von Bezugssystemen, Invarianz der Lichtgeschwindigkeit, Lichtuhr und Zeitdilatation.",
+              "tags": [
+                "Physik",
+                "EF",
+                "Relativität",
+                "Bezugssystem",
+                "Lichtgeschwindigkeit",
+                "Zeitdilatation"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Relativität",
+                  "url": "material/physik/ef/mechanik/relativitaet/test.html"
                 }
               ]
             }
@@ -164,54 +2037,267 @@
           "name": "Q1 GK",
           "themen": [
             {
-              "titel": "Photoeffekt und Photonenmodell",
-              "beschreibung": "Deutung des Photoeffekts mit Lichtquanten, Grenzfrequenz und Austrittsarbeit.",
+              "titel": "Geladene Teilchen in elektrischen Feldern",
+              "beschreibung": "IF A: elektrische Feldlinienbilder, Superposition, elektrische Feldstärke, Spannung und Feldstärke im Plattenkondensator, Kapazität, Millikanversuch, Elektronenkanone und Bahnen geladener Teilchen im E-Feld.",
               "tags": [
-                "Quantenphysik",
-                "Photoeffekt",
-                "Photonen"
+                "Physik",
+                "Q1 GK",
+                "IF A",
+                "elektrisches Feld",
+                "Feldstärke",
+                "Plattenkondensator",
+                "Millikan",
+                "Elektronenkanone"
               ],
               "links": [
                 {
-                  "typ": "Lernpfad",
-                  "titel": "Photoeffekt",
-                  "url": "material/physik/q1-gk/photoeffekt/lernpfad-photoeffekt.html"
+                  "typ": "Test",
+                  "titel": "Testdatei: Geladene Teilchen in elektrischen Feldern",
+                  "url": "material/physik/q1-gk/if-a/geladene-teilchen-in-elektrischen-feldern/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Geladene Teilchen in magnetischen Feldern",
+              "beschreibung": "IF A: magnetische Feldlinienbilder, Lorentzkraft, magnetische Flussdichte, Bahnen geladener Teilchen im B-Feld, Erdmagnetfeld, Fadenstrahlrohr und Zyklotron.",
+              "tags": [
+                "Physik",
+                "Q1 GK",
+                "IF A",
+                "magnetisches Feld",
+                "Lorentzkraft",
+                "Flussdichte",
+                "Fadenstrahlrohr",
+                "Zyklotron"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Geladene Teilchen in magnetischen Feldern",
+                  "url": "material/physik/q1-gk/if-a/geladene-teilchen-in-magnetischen-feldern/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Klassische Wellen",
+              "beschreibung": "IF A: harmonische Schwingungen, Federpendel, harmonische Wellen, Longitudinal- und Transversalwellen, Huygens-Prinzip, Reflexion, Brechung, Beugung, Interferenz, Superposition, stehende Wellen, Polarisation und Interferenz am Doppelspalt/Gitter.",
+              "tags": [
+                "Physik",
+                "Q1 GK",
+                "IF A",
+                "Wellen",
+                "Schwingungen",
+                "Interferenz",
+                "Doppelspalt",
+                "Gitter",
+                "Polarisation"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Klassische Wellen",
+                  "url": "material/physik/q1-gk/if-a/klassische-wellen/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Quantenobjekte",
+              "beschreibung": "IF B: Photoeffekt, Photonen, Energiequantelung, De-Broglie-Hypothese, Elektronen-Doppelspalt, Energie und Impuls von Quantenobjekten, Wahrscheinlichkeitsinterpretation und Grenzen von Wellen- und Teilchenmodellen.",
+              "tags": [
+                "Physik",
+                "Q1 GK",
+                "IF B",
+                "Quantenobjekte",
+                "Photoeffekt",
+                "Photonen",
+                "de Broglie",
+                "Doppelspalt",
+                "Welle-Teilchen-Modell"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Quantenobjekte",
+                  "url": "material/physik/q1-gk/if-b/quantenobjekte/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Elektrodynamik und Energieübertragung: Induktion",
+              "beschreibung": "IF C: Induktionsspannung, Leiterschaukel, Lorentzkraft auf bewegte Ladungsträger, Leiterschleife, Änderung von magnetischer Flussdichte und Fläche, Induktionsgesetz und Thomsonscher Ringversuch.",
+              "tags": [
+                "Physik",
+                "Q1 GK",
+                "IF C",
+                "Induktion",
+                "Leiterschaukel",
+                "Induktionsgesetz",
+                "Thomsonscher Ringversuch"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Elektrodynamik und Energieübertragung: Induktion",
+                  "url": "material/physik/q1-gk/if-c/elektrodynamik-induktion/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Elektrodynamik und Energieübertragung: Transformatoren und Generatoren",
+              "beschreibung": "IF C: Transformatoren, Modellexperiment zu Freileitungen, sinusförmige Wechselspannungen in Generatoren, Energiebereitstellung und Energieumwandlung unter technischen und ökologischen Aspekten.",
+              "tags": [
+                "Physik",
+                "Q1 GK",
+                "IF C",
+                "Transformator",
+                "Generator",
+                "Wechselspannung",
+                "Energieübertragung"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Elektrodynamik und Energieübertragung: Transformatoren und Generatoren",
+                  "url": "material/physik/q1-gk/if-c/elektrodynamik-transformatoren-und-energieuebertragung/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Kondensatoren und elektromagnetische Schwingungen",
+              "beschreibung": "IF C: Kapazität eines Plattenkondensators, Kondensator als Energiespeicher, elektromagnetische Schwingung in Spule und Kondensator, Auf- und Entladevorgang und Energie im Q-U-Diagramm.",
+              "tags": [
+                "Physik",
+                "Q1 GK",
+                "IF C",
+                "Kondensator",
+                "Kapazität",
+                "Energiespeicher",
+                "elektromagnetische Schwingung",
+                "Entladung"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Kondensatoren und elektromagnetische Schwingungen",
+                  "url": "material/physik/q1-gk/if-c/kondensatoren-und-elektromagnetische-schwingungen/test.html"
                 }
               ]
             }
           ]
         },
         {
-          "name": "Klasse 6",
-          "themen": []
-        },
-        {
-          "name": "Klasse 7",
-          "themen": []
-        },
-        {
-          "name": "Klasse 9",
-          "themen": []
-        },
-        {
-          "name": "Klasse 10",
-          "themen": []
-        },
-        {
-          "name": "EF",
-          "themen": []
-        },
-        {
           "name": "Q1 LK",
-          "themen": []
+          "themen": [
+            {
+              "titel": "Leistungskurs Physik: Struktur noch nicht ausgewiesen",
+              "beschreibung": "Im verlinkten schulinternen Lehrplan ist eine zusammenhängende Übersicht für Q1/Q2 Grundkurs ausgewiesen. Für den Leistungskurs wurde hier ein Platzhalterordner angelegt.",
+              "tags": [
+                "Physik",
+                "Q1 LK",
+                "Platzhalter",
+                "Leistungskurs"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Leistungskurs Physik: Struktur noch nicht ausgewiesen",
+                  "url": "material/physik/q1-lk/oberstufe/leistungskurs-physik-noch-nicht-ausgewiesen/test.html"
+                }
+              ]
+            }
+          ]
         },
         {
           "name": "Q2 GK",
-          "themen": []
+          "themen": [
+            {
+              "titel": "Strahlung und Materie: Spektrum und Radioaktivität",
+              "beschreibung": "IF D: Alpha-, Beta-, Gamma-, Röntgen- und Schwerionenstrahlung, elektromagnetisches Spektrum, Geiger-Müller-Zählrohr, Absorptionsexperimente, biologisch-medizinische Wirkungen, Anwendungen und Strahlenschutz.",
+              "tags": [
+                "Physik",
+                "Q2 GK",
+                "IF D",
+                "Strahlung",
+                "Radioaktivität",
+                "Spektrum",
+                "Geiger-Müller-Zählrohr",
+                "Strahlenschutz"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Strahlung und Materie: Spektrum und Radioaktivität",
+                  "url": "material/physik/q2-gk/if-d/strahlung-und-materie-spektrum-und-radioaktivitaet/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Strahlung und Materie: Atomphysik",
+              "beschreibung": "IF D: historische Entwicklung der Atommodelle, Grenzen naturwissenschaftlicher Modelle, Linienspektren, Fraunhofer-Linien, Flammenfärbung, Spektralanalyse, Franck-Hertz-Versuch, Wasserstoffatom und charakteristische Röntgenstrahlung.",
+              "tags": [
+                "Physik",
+                "Q2 GK",
+                "IF D",
+                "Atomphysik",
+                "Atommodelle",
+                "Linienspektren",
+                "Franck-Hertz",
+                "Röntgenstrahlung"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Strahlung und Materie: Atomphysik",
+                  "url": "material/physik/q2-gk/if-d/strahlung-und-materie-atomphysik/test.html"
+                }
+              ]
+            },
+            {
+              "titel": "Strahlung und Materie: Kernphysik",
+              "beschreibung": "IF D: Radioaktivität und Kernumwandlungsprozesse, Nuklidkarte, Zerfallsgesetz, Halbwertszeit, Aufbau des Atomkerns, Quarks, starke und schwache Wechselwirkung, Kernspaltung, Kernfusion und Massendefekt.",
+              "tags": [
+                "Physik",
+                "Q2 GK",
+                "IF D",
+                "Kernphysik",
+                "Nuklidkarte",
+                "Halbwertszeit",
+                "Quarks",
+                "Kernspaltung",
+                "Kernfusion",
+                "Massendefekt"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Strahlung und Materie: Kernphysik",
+                  "url": "material/physik/q2-gk/if-d/strahlung-und-materie-kernphysik/test.html"
+                }
+              ]
+            }
+          ]
         },
         {
           "name": "Q2 LK",
-          "themen": []
+          "themen": [
+            {
+              "titel": "Leistungskurs Physik: Struktur noch nicht ausgewiesen",
+              "beschreibung": "Im verlinkten schulinternen Lehrplan ist eine zusammenhängende Übersicht für Q1/Q2 Grundkurs ausgewiesen. Für den Leistungskurs wurde hier ein Platzhalterordner angelegt.",
+              "tags": [
+                "Physik",
+                "Q2 LK",
+                "Platzhalter",
+                "Leistungskurs"
+              ],
+              "links": [
+                {
+                  "typ": "Test",
+                  "titel": "Testdatei: Leistungskurs Physik: Struktur noch nicht ausgewiesen",
+                  "url": "material/physik/q2-lk/oberstufe/leistungskurs-physik-noch-nicht-ausgewiesen/test.html"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
