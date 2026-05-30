@@ -1,139 +1,179 @@
-let allMaterials = [];
-let currentSubject = "Alle";
-let currentClass = "Alle";
+function getParams() {
+  return new URLSearchParams(window.location.search);
+}
 
-const app = document.getElementById("app");
-const resultInfo = document.getElementById("resultInfo");
-const subjectFilters = document.getElementById("subjectFilters");
-const classFilters = document.getElementById("classFilters");
-const searchInput = document.getElementById("searchInput");
-const resetButton = document.getElementById("resetButton");
+function slugify(text) {
+  return String(text)
+    .toLowerCase()
+    .trim()
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
 
-fetch("data.json")
-  .then(response => {
-    if (!response.ok) {
-      throw new Error("data.json konnte nicht geladen werden.");
+async function loadData() {
+  const response = await fetch("data.json");
+  if (!response.ok) throw new Error("data.json konnte nicht geladen werden.");
+  return response.json();
+}
+
+function findFach(data, fachSlug) {
+  return data.faecher.find(fach => slugify(fach.name) === fachSlug);
+}
+
+function findKlasse(fach, klasseSlug) {
+  return fach.klassen.find(klasse => slugify(klasse.name) === klasseSlug);
+}
+
+function linkClassForTyp(typ) {
+  const lower = String(typ).toLowerCase();
+  if (lower.includes("pdf") || lower.includes("arbeitsblatt") || lower.includes("material")) {
+    return "button secondary";
+  }
+  return "button";
+}
+
+async function initStartPage() {
+  const grid = document.getElementById("subjectGrid");
+  try {
+    const data = await loadData();
+    grid.innerHTML = data.faecher.map(fach => {
+      const fachSlug = slugify(fach.name);
+      const icon = fach.name.toLowerCase().includes("physik") ? "⚛" : "∑";
+      return `
+        <a class="card" href="fach.html?fach=${fachSlug}">
+          <div class="icon">${icon}</div>
+          <h3>${fach.name}</h3>
+          <p>${fach.klassen.length} Klassen und Kurse</p>
+        </a>
+      `;
+    }).join("");
+  } catch (error) {
+    grid.innerHTML = `<div class="empty">${error.message}</div>`;
+  }
+}
+
+async function initFachPage() {
+  const fachSlug = getParams().get("fach");
+  const title = document.getElementById("fachTitel");
+  const breadcrumb = document.getElementById("breadcrumbFach");
+  const grid = document.getElementById("classGrid");
+
+  try {
+    const data = await loadData();
+    const fach = findFach(data, fachSlug);
+    if (!fach) {
+      title.textContent = "Fach nicht gefunden";
+      grid.innerHTML = `<div class="empty">Prüfe den Link oder die Einträge in data.json.</div>`;
+      return;
     }
-    return response.json();
-  })
-  .then(data => {
-    allMaterials = flattenMaterials(data);
-    buildFilters();
-    renderMaterials();
-  })
-  .catch(error => {
-    app.innerHTML = `<div class="card"><h3>Fehler</h3><p>${error.message}</p></div>`;
-    resultInfo.textContent = "Die Materialdaten konnten nicht geladen werden.";
-  });
 
-function flattenMaterials(data) {
-  const output = [];
+    title.textContent = fach.name;
+    breadcrumb.textContent = fach.name;
+    document.title = `${fach.name} – Lernplattform`;
 
-  data.faecher.forEach(fach => {
-    fach.klassen.forEach(klasse => {
-      klasse.themen.forEach(thema => {
-        output.push({
-          fach: fach.name,
-          klasse: klasse.name,
-          titel: thema.titel,
-          beschreibung: thema.beschreibung,
-          tags: thema.tags || [],
-          links: thema.links || []
-        });
-      });
-    });
-  });
-
-  return output;
+    grid.innerHTML = fach.klassen.map(klasse => {
+      const klasseSlug = slugify(klasse.name);
+      return `
+        <a class="card" href="klasse.html?fach=${fachSlug}&klasse=${klasseSlug}">
+          <div class="icon">📚</div>
+          <h3>${klasse.name}</h3>
+          <p>${klasse.themen.length} Themenbereiche</p>
+        </a>
+      `;
+    }).join("");
+  } catch (error) {
+    grid.innerHTML = `<div class="empty">${error.message}</div>`;
+  }
 }
 
-function buildFilters() {
-  const subjects = ["Alle", ...new Set(allMaterials.map(item => item.fach))];
-  const classes = ["Alle", ...new Set(allMaterials.map(item => item.klasse))];
+async function initKlassePage() {
+  const params = getParams();
+  const fachSlug = params.get("fach");
+  const klasseSlug = params.get("klasse");
 
-  subjectFilters.innerHTML = "<h3>Fach</h3>" + subjects.map(subject => {
-    return `<button class="filter-button ${subject === currentSubject ? "active" : ""}" data-subject="${subject}">${subject}</button>`;
-  }).join("");
+  const eyebrow = document.getElementById("klasseEyebrow");
+  const title = document.getElementById("klasseTitel");
+  const breadcrumbKlasse = document.getElementById("breadcrumbKlasse");
+  const backLink = document.getElementById("zurueckZumFach");
+  const themeList = document.getElementById("themeList");
+  const searchInput = document.getElementById("searchInput");
 
-  classFilters.innerHTML = "<h3>Klasse</h3>" + classes.map(klasse => {
-    return `<button class="filter-button ${klasse === currentClass ? "active" : ""}" data-class="${klasse}">${klasse}</button>`;
-  }).join("");
+  let themaDaten = [];
 
-  document.querySelectorAll("[data-subject]").forEach(button => {
-    button.addEventListener("click", () => {
-      currentSubject = button.dataset.subject;
-      buildFilters();
-      renderMaterials();
+  function render() {
+    const query = searchInput.value.trim().toLowerCase();
+    const filtered = themaDaten.filter(thema => {
+      const text = [
+        thema.titel,
+        thema.beschreibung,
+        ...(thema.tags || []),
+        ...(thema.links || []).map(link => `${link.typ} ${link.titel} ${link.url}`)
+      ].join(" ").toLowerCase();
+      return query === "" || text.includes(query);
     });
-  });
 
-  document.querySelectorAll("[data-class]").forEach(button => {
-    button.addEventListener("click", () => {
-      currentClass = button.dataset.class;
-      buildFilters();
-      renderMaterials();
-    });
-  });
-}
+    if (filtered.length === 0) {
+      themeList.innerHTML = `<div class="empty">Keine passenden Themen gefunden.</div>`;
+      return;
+    }
 
-function renderMaterials() {
-  const query = searchInput.value.trim().toLowerCase();
+    themeList.innerHTML = filtered.map(thema => {
+      const tags = (thema.tags || []).map(tag => `<span class="tag">${tag}</span>`).join("");
+      let links = `<div class="empty">Noch kein Material hinterlegt.</div>`;
 
-  const filtered = allMaterials.filter(item => {
-    const matchesSubject = currentSubject === "Alle" || item.fach === currentSubject;
-    const matchesClass = currentClass === "Alle" || item.klasse === currentClass;
-    const haystack = [
-      item.fach,
-      item.klasse,
-      item.titel,
-      item.beschreibung,
-      ...item.tags
-    ].join(" ").toLowerCase();
-    const matchesSearch = query === "" || haystack.includes(query);
+      if (thema.links && thema.links.length > 0) {
+        links = thema.links.map(link => `
+          <a class="${linkClassForTyp(link.typ)}"
+             href="${link.url}"
+             target="_blank"
+             rel="noopener noreferrer">
+            ${link.typ}: ${link.titel} ↗
+          </a>
+        `).join("");
+      }
 
-    return matchesSubject && matchesClass && matchesSearch;
-  });
-
-  resultInfo.textContent = `${filtered.length} Materialbereich${filtered.length === 1 ? "" : "e"} gefunden.`;
-
-  if (filtered.length === 0) {
-    app.innerHTML = `<div class="card"><h3>Keine Treffer</h3><p>Ändere die Suche oder setze die Filter zurück.</p></div>`;
-    return;
+      return `
+        <article class="theme-card">
+          <div class="tags">${tags}</div>
+          <h3>${thema.titel}</h3>
+          <p>${thema.beschreibung || ""}</p>
+          <div class="links">${links}</div>
+        </article>
+      `;
+    }).join("");
   }
 
-  app.innerHTML = filtered.map(item => createCard(item)).join("");
+  try {
+    const data = await loadData();
+    const fach = findFach(data, fachSlug);
+    if (!fach) {
+      title.textContent = "Fach nicht gefunden";
+      themeList.innerHTML = `<div class="empty">Prüfe den Link oder die Einträge in data.json.</div>`;
+      return;
+    }
+
+    const klasse = findKlasse(fach, klasseSlug);
+    if (!klasse) {
+      title.textContent = "Klasse nicht gefunden";
+      themeList.innerHTML = `<div class="empty">Prüfe den Link oder die Einträge in data.json.</div>`;
+      return;
+    }
+
+    eyebrow.textContent = fach.name;
+    title.textContent = klasse.name;
+    breadcrumbKlasse.textContent = klasse.name;
+    backLink.textContent = fach.name;
+    backLink.href = `fach.html?fach=${fachSlug}`;
+    document.title = `${fach.name} · ${klasse.name} – Lernplattform`;
+
+    themaDaten = klasse.themen || [];
+    render();
+    searchInput.addEventListener("input", render);
+  } catch (error) {
+    themeList.innerHTML = `<div class="empty">${error.message}</div>`;
+  }
 }
-
-function createCard(item) {
-  const badges = [item.fach, item.klasse, ...item.tags.slice(0, 3)]
-    .map(tag => `<span class="badge">${tag}</span>`)
-    .join("");
-
-  const links = item.links.map(link => {
-    const cssClass = link.typ.toLowerCase().includes("pdf") ? "button secondary" : "button";
-    return `<a class="${cssClass}" href="${link.url}">${link.typ}: ${link.titel}</a>`;
-  }).join("");
-
-  return `
-    <article class="card">
-      <div class="card-top">
-        <div>
-          <div class="badges">${badges}</div>
-          <h3>${item.titel}</h3>
-        </div>
-      </div>
-      <p>${item.beschreibung}</p>
-      <div class="links">${links}</div>
-    </article>
-  `;
-}
-
-searchInput.addEventListener("input", renderMaterials);
-
-resetButton.addEventListener("click", () => {
-  currentSubject = "Alle";
-  currentClass = "Alle";
-  searchInput.value = "";
-  buildFilters();
-  renderMaterials();
-});

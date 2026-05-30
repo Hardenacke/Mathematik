@@ -1,0 +1,15 @@
+README_NAVIGATION.md
+data.json
+fach.html
+index.html
+klasse.html
+material/mathematik/ef/funktionen/lernpfad-transformationen.html
+material/mathematik/klasse-5/volumen/arbeitsblatt-volumen.pdf
+material/mathematik/klasse-5/volumen/lernpfad-volumen.html
+material/mathematik/klasse-5/volumen/lernspiel-koerper.html
+material/mathematik/klasse-7/kongruenzsaetze/lernpfad-kongruenzsaetze.html
+material/physik/klasse-5/waerme/lernpfad-waerme.html
+material/physik/klasse-8/astronomie/lernpfad-radioteleskop.html
+material/physik/q1-gk/photoeffekt/lernpfad-photoeffekt.html
+script.js
+style.css

@@ -3,27 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lernplattform</title>
+  <title>Fachübersicht</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
+  <header class="hero compact">
     <div class="hero-content">
       <p class="eyebrow">Digitale Lernplattform</p>
-      <h1>Fach auswählen</h1>
-      <p class="subtitle">Wähle ein Fach aus. Danach gelangst du zur Übersicht der Klassen und Kurse.</p>
+      <h1 id="fachTitel">Fach</h1>
+      <p class="subtitle">Wähle deine Klasse oder deinen Kurs aus.</p>
     </div>
   </header>
 
   <main class="page">
-    <nav class="breadcrumb"><span>Startseite</span></nav>
+    <nav class="breadcrumb">
+      <a href="index.html">Startseite</a>
+      <span id="breadcrumbFach">Fach</span>
+    </nav>
     <section class="panel">
-      <h2>Fächer</h2>
-      <div id="subjectGrid" class="grid cards"></div>
+      <h2>Klassen und Kurse</h2>
+      <div id="classGrid" class="grid cards"></div>
     </section>
   </main>
 
   <script src="script.js"></script>
-  <script>initStartPage();</script>
+  <script>initFachPage();</script>
 </body>
 </html>

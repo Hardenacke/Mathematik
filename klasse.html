@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materialübersicht</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero compact">
+    <div class="hero-content">
+      <p class="eyebrow" id="klasseEyebrow">Digitale Lernplattform</p>
+      <h1 id="klasseTitel">Materialübersicht</h1>
+      <p class="subtitle">Wähle ein Thema aus und öffne Lernpfade, Lernspiele oder Arbeitsmaterialien.</p>
+    </div>
+  </header>
+
+  <main class="page">
+    <nav class="breadcrumb">
+      <a href="index.html">Startseite</a>
+      <a id="zurueckZumFach" href="fach.html">Fach</a>
+      <span id="breadcrumbKlasse">Klasse</span>
+    </nav>
+
+    <section class="panel">
+      <div class="toolbar">
+        <h2>Themen</h2>
+        <input id="searchInput" type="search" placeholder="Thema oder Material suchen …">
+      </div>
+      <div id="themeList" class="theme-list"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script>initKlassePage();</script>
+</body>
+</html>

@@ -1,16 +1,4 @@
 {
-  "meta": {
-    "titel": "Lernplattform – Materialstruktur Mathematik und Physik",
-    "stand": "2026-05-29",
-    "hinweis": "Die links-Arrays sind bewusst leer, damit keine kaputten Buttons entstehen. Ergänze dort später deine HTML-Dateien, PDFs oder Lernpfade.",
-    "struktur": "Fach → Klasse/Kurs → Thema → Links",
-    "grundlage": [
-      "NRW Lehrplannavigator: Mathematik Sekundarstufe I Gymnasium ab 2019/2020",
-      "NRW Lehrplannavigator: Physik Sekundarstufe I Gymnasium ab 2019/2020",
-      "NRW Lehrplannavigator: Mathematik Gymnasiale Oberstufe ab 2023/2024",
-      "NRW Lehrplannavigator: Physik Gymnasiale Oberstufe ab 2022/2023"
-    ]
-  },
   "faecher": [
     {
       "name": "Mathematik",
@@ -19,169 +7,30 @@
           "name": "Klasse 5",
           "themen": [
             {
-              "titel": "Natürliche Zahlen und Stellenwertsystem",
-              "beschreibung": "Materialsammlung zum Themenbereich „Natürliche Zahlen und Stellenwertsystem“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
+              "titel": "Rauminhalte und Volumen",
+              "beschreibung": "Vergleichen von Körpern, Würfelvolumen, Volumeneinheiten und Umrechnungen.",
               "tags": [
-                "Arithmetik/Algebra",
-                "Zahlen"
+                "Volumen",
+                "Einheiten",
+                "Lernspiel"
               ],
-              "ordner": "material/mathematik/klasse-5/natuerliche-zahlen-und-stellenwertsystem/",
-              "links": []
-            },
-            {
-              "titel": "Grundrechenarten und Rechengesetze",
-              "beschreibung": "Materialsammlung zum Themenbereich „Grundrechenarten und Rechengesetze“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Arithmetik/Algebra",
-                "Rechnen"
-              ],
-              "ordner": "material/mathematik/klasse-5/grundrechenarten-und-rechengesetze/",
-              "links": []
-            },
-            {
-              "titel": "Größen und Einheiten",
-              "beschreibung": "Materialsammlung zum Themenbereich „Größen und Einheiten“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Arithmetik/Algebra",
-                "Größen"
-              ],
-              "ordner": "material/mathematik/klasse-5/groessen-und-einheiten/",
-              "links": []
-            },
-            {
-              "titel": "Ebene Figuren, Koordinatensystem und Zeichnen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Ebene Figuren, Koordinatensystem und Zeichnen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Geometrie",
-                "Grundlagen"
-              ],
-              "ordner": "material/mathematik/klasse-5/ebene-figuren-koordinatensystem-und-zeichnen/",
-              "links": []
-            },
-            {
-              "titel": "Umfang, Flächeninhalt und Maßstab",
-              "beschreibung": "Materialsammlung zum Themenbereich „Umfang, Flächeninhalt und Maßstab“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Geometrie",
-                "Messen"
-              ],
-              "ordner": "material/mathematik/klasse-5/umfang-flaecheninhalt-und-massstab/",
-              "links": []
-            },
-            {
-              "titel": "Körper, Netze, Schrägbilder und Rauminhalt",
-              "beschreibung": "Materialsammlung zum Themenbereich „Körper, Netze, Schrägbilder und Rauminhalt“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Geometrie",
-                "Volumen"
-              ],
-              "ordner": "material/mathematik/klasse-5/koerper-netze-schraegbilder-und-rauminhalt/",
-              "links": []
-            },
-            {
-              "titel": "Brüche als Anteile und Größen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Brüche als Anteile und Größen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Arithmetik/Algebra",
-                "Brüche"
-              ],
-              "ordner": "material/mathematik/klasse-5/brueche-als-anteile-und-groessen/",
-              "links": []
-            },
-            {
-              "titel": "Daten sammeln, darstellen und auswerten",
-              "beschreibung": "Materialsammlung zum Themenbereich „Daten sammeln, darstellen und auswerten“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Stochastik",
-                "Daten"
-              ],
-              "ordner": "material/mathematik/klasse-5/daten-sammeln-darstellen-und-auswerten/",
-              "links": []
-            }
-          ]
-        },
-        {
-          "name": "Klasse 6",
-          "themen": [
-            {
-              "titel": "Brüche und Dezimalzahlen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Brüche und Dezimalzahlen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Arithmetik/Algebra",
-                "Brüche"
-              ],
-              "ordner": "material/mathematik/klasse-6/brueche-und-dezimalzahlen/",
-              "links": []
-            },
-            {
-              "titel": "Rechnen mit Brüchen und Dezimalzahlen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Rechnen mit Brüchen und Dezimalzahlen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Arithmetik/Algebra",
-                "Rechnen"
-              ],
-              "ordner": "material/mathematik/klasse-6/rechnen-mit-bruechen-und-dezimalzahlen/",
-              "links": []
-            },
-            {
-              "titel": "Ganze Zahlen und rationale Zahlen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Ganze Zahlen und rationale Zahlen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Arithmetik/Algebra",
-                "Rationale Zahlen"
-              ],
-              "ordner": "material/mathematik/klasse-6/ganze-zahlen-und-rationale-zahlen/",
-              "links": []
-            },
-            {
-              "titel": "Terme, Variablen und einfache Gleichungen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Terme, Variablen und einfache Gleichungen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Arithmetik/Algebra",
-                "Terme"
-              ],
-              "ordner": "material/mathematik/klasse-6/terme-variablen-und-einfache-gleichungen/",
-              "links": []
-            },
-            {
-              "titel": "Winkel, Kreis und geometrische Abbildungen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Winkel, Kreis und geometrische Abbildungen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Geometrie",
-                "Abbildungen"
-              ],
-              "ordner": "material/mathematik/klasse-6/winkel-kreis-und-geometrische-abbildungen/",
-              "links": []
-            },
-            {
-              "titel": "Prozentbegriff und einfache Zuordnungen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Prozentbegriff und einfache Zuordnungen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Funktionen",
-                "Prozentrechnung"
-              ],
-              "ordner": "material/mathematik/klasse-6/prozentbegriff-und-einfache-zuordnungen/",
-              "links": []
-            },
-            {
-              "titel": "Daten und Häufigkeiten",
-              "beschreibung": "Materialsammlung zum Themenbereich „Daten und Häufigkeiten“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Stochastik",
-                "Statistik"
-              ],
-              "ordner": "material/mathematik/klasse-6/daten-und-haeufigkeiten/",
-              "links": []
-            },
-            {
-              "titel": "Zufallsexperimente und Wahrscheinlichkeit",
-              "beschreibung": "Materialsammlung zum Themenbereich „Zufallsexperimente und Wahrscheinlichkeit“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Stochastik",
-                "Wahrscheinlichkeit"
-              ],
-              "ordner": "material/mathematik/klasse-6/zufallsexperimente-und-wahrscheinlichkeit/",
-              "links": []
+              "links": [
+                {
+                  "typ": "Lernpfad",
+                  "titel": "Volumen entdecken",
+                  "url": "material/mathematik/klasse-5/volumen/lernpfad-volumen.html"
+                },
+                {
+                  "typ": "Lernspiel",
+                  "titel": "Körper vergleichen",
+                  "url": "material/mathematik/klasse-5/volumen/lernspiel-koerper.html"
+                },
+                {
+                  "typ": "PDF",
+                  "titel": "Arbeitsblatt Volumeneinheiten",
+                  "url": "material/mathematik/klasse-5/volumen/arbeitsblatt-volumen.pdf"
+                }
+              ]
             }
           ]
         },
@@ -189,339 +38,20 @@
           "name": "Klasse 7",
           "themen": [
             {
-              "titel": "Rationale Zahlen vertieft",
-              "beschreibung": "Materialsammlung zum Themenbereich „Rationale Zahlen vertieft“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Arithmetik/Algebra",
-                "Rationale Zahlen"
-              ],
-              "ordner": "material/mathematik/klasse-7/rationale-zahlen-vertieft/",
-              "links": []
-            },
-            {
-              "titel": "Terme und Gleichungen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Terme und Gleichungen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Arithmetik/Algebra",
-                "Gleichungen"
-              ],
-              "ordner": "material/mathematik/klasse-7/terme-und-gleichungen/",
-              "links": []
-            },
-            {
-              "titel": "Zuordnungen und Dreisatz",
-              "beschreibung": "Materialsammlung zum Themenbereich „Zuordnungen und Dreisatz“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Funktionen",
-                "Zuordnungen"
-              ],
-              "ordner": "material/mathematik/klasse-7/zuordnungen-und-dreisatz/",
-              "links": []
-            },
-            {
-              "titel": "Prozent- und Zinsrechnung",
-              "beschreibung": "Materialsammlung zum Themenbereich „Prozent- und Zinsrechnung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Funktionen",
-                "Prozentrechnung"
-              ],
-              "ordner": "material/mathematik/klasse-7/prozent-und-zinsrechnung/",
-              "links": []
-            },
-            {
-              "titel": "Lineare Beziehungen vorbereiten",
-              "beschreibung": "Materialsammlung zum Themenbereich „Lineare Beziehungen vorbereiten“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Funktionen",
-                "Lineare Funktionen"
-              ],
-              "ordner": "material/mathematik/klasse-7/lineare-beziehungen-vorbereiten/",
-              "links": []
-            },
-            {
-              "titel": "Winkel, Dreiecke und Kongruenzsätze",
-              "beschreibung": "Materialsammlung zum Themenbereich „Winkel, Dreiecke und Kongruenzsätze“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
+              "titel": "Kongruenzsätze und Dreieckskonstruktionen",
+              "beschreibung": "SSS, SWS, WSW und SSW sowie Konstruktionen mit Zirkel und Lineal.",
               "tags": [
                 "Geometrie",
+                "Dreiecke",
                 "Kongruenz"
               ],
-              "ordner": "material/mathematik/klasse-7/winkel-dreiecke-und-kongruenzsaetze/",
-              "links": []
-            },
-            {
-              "titel": "Konstruktionen und Begründen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Konstruktionen und Begründen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Geometrie",
-                "Argumentieren"
-              ],
-              "ordner": "material/mathematik/klasse-7/konstruktionen-und-begruenden/",
-              "links": []
-            },
-            {
-              "titel": "Wahrscheinlichkeit mit Baumdiagrammen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Wahrscheinlichkeit mit Baumdiagrammen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Stochastik",
-                "Baumdiagramme"
-              ],
-              "ordner": "material/mathematik/klasse-7/wahrscheinlichkeit-mit-baumdiagrammen/",
-              "links": []
-            }
-          ]
-        },
-        {
-          "name": "Klasse 8",
-          "themen": [
-            {
-              "titel": "Lineare Funktionen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Lineare Funktionen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Funktionen",
-                "Lineare Funktionen"
-              ],
-              "ordner": "material/mathematik/klasse-8/lineare-funktionen/",
-              "links": []
-            },
-            {
-              "titel": "Lineare Gleichungen und Ungleichungen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Lineare Gleichungen und Ungleichungen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Arithmetik/Algebra",
-                "Gleichungen"
-              ],
-              "ordner": "material/mathematik/klasse-8/lineare-gleichungen-und-ungleichungen/",
-              "links": []
-            },
-            {
-              "titel": "Lineare Gleichungssysteme",
-              "beschreibung": "Materialsammlung zum Themenbereich „Lineare Gleichungssysteme“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Arithmetik/Algebra",
-                "LGS"
-              ],
-              "ordner": "material/mathematik/klasse-8/lineare-gleichungssysteme/",
-              "links": []
-            },
-            {
-              "titel": "Bruchterme und algebraische Umformungen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Bruchterme und algebraische Umformungen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Arithmetik/Algebra",
-                "Bruchterme"
-              ],
-              "ordner": "material/mathematik/klasse-8/bruchterme-und-algebraische-umformungen/",
-              "links": []
-            },
-            {
-              "titel": "Flächen und Körper vertieft",
-              "beschreibung": "Materialsammlung zum Themenbereich „Flächen und Körper vertieft“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Geometrie",
-                "Körper"
-              ],
-              "ordner": "material/mathematik/klasse-8/flaechen-und-koerper-vertieft/",
-              "links": []
-            },
-            {
-              "titel": "Ähnlichkeit und Strahlensätze",
-              "beschreibung": "Materialsammlung zum Themenbereich „Ähnlichkeit und Strahlensätze“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Geometrie",
-                "Ähnlichkeit"
-              ],
-              "ordner": "material/mathematik/klasse-8/aehnlichkeit-und-strahlensaetze/",
-              "links": []
-            },
-            {
-              "titel": "Daten, Kenngrößen und Boxplots",
-              "beschreibung": "Materialsammlung zum Themenbereich „Daten, Kenngrößen und Boxplots“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Stochastik",
-                "Statistik"
-              ],
-              "ordner": "material/mathematik/klasse-8/daten-kenngroessen-und-boxplots/",
-              "links": []
-            },
-            {
-              "titel": "Mehrstufige Zufallsexperimente",
-              "beschreibung": "Materialsammlung zum Themenbereich „Mehrstufige Zufallsexperimente“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Stochastik",
-                "Wahrscheinlichkeit"
-              ],
-              "ordner": "material/mathematik/klasse-8/mehrstufige-zufallsexperimente/",
-              "links": []
-            }
-          ]
-        },
-        {
-          "name": "Klasse 9",
-          "themen": [
-            {
-              "titel": "Potenzen, Wurzeln und Potenzgesetze",
-              "beschreibung": "Materialsammlung zum Themenbereich „Potenzen, Wurzeln und Potenzgesetze“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Arithmetik/Algebra",
-                "Potenzen"
-              ],
-              "ordner": "material/mathematik/klasse-9/potenzen-wurzeln-und-potenzgesetze/",
-              "links": []
-            },
-            {
-              "titel": "Quadratische Funktionen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Quadratische Funktionen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Funktionen",
-                "Quadratische Funktionen"
-              ],
-              "ordner": "material/mathematik/klasse-9/quadratische-funktionen/",
-              "links": []
-            },
-            {
-              "titel": "Quadratische Gleichungen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Quadratische Gleichungen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Arithmetik/Algebra",
-                "Quadratische Gleichungen"
-              ],
-              "ordner": "material/mathematik/klasse-9/quadratische-gleichungen/",
-              "links": []
-            },
-            {
-              "titel": "Satzgruppe des Pythagoras",
-              "beschreibung": "Materialsammlung zum Themenbereich „Satzgruppe des Pythagoras“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Geometrie",
-                "Pythagoras"
-              ],
-              "ordner": "material/mathematik/klasse-9/satzgruppe-des-pythagoras/",
-              "links": []
-            },
-            {
-              "titel": "Trigonometrie im rechtwinkligen Dreieck",
-              "beschreibung": "Materialsammlung zum Themenbereich „Trigonometrie im rechtwinkligen Dreieck“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Geometrie",
-                "Trigonometrie"
-              ],
-              "ordner": "material/mathematik/klasse-9/trigonometrie-im-rechtwinkligen-dreieck/",
-              "links": []
-            },
-            {
-              "titel": "Kreise und Körperberechnungen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Kreise und Körperberechnungen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Geometrie",
-                "Kreis"
-              ],
-              "ordner": "material/mathematik/klasse-9/kreise-und-koerperberechnungen/",
-              "links": []
-            },
-            {
-              "titel": "Exponentielles Wachstum vorbereiten",
-              "beschreibung": "Materialsammlung zum Themenbereich „Exponentielles Wachstum vorbereiten“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Funktionen",
-                "Wachstum"
-              ],
-              "ordner": "material/mathematik/klasse-9/exponentielles-wachstum-vorbereiten/",
-              "links": []
-            },
-            {
-              "titel": "Bedingte Wahrscheinlichkeit",
-              "beschreibung": "Materialsammlung zum Themenbereich „Bedingte Wahrscheinlichkeit“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Stochastik",
-                "Bedingte Wahrscheinlichkeit"
-              ],
-              "ordner": "material/mathematik/klasse-9/bedingte-wahrscheinlichkeit/",
-              "links": []
-            }
-          ]
-        },
-        {
-          "name": "Klasse 10",
-          "themen": [
-            {
-              "titel": "Exponentialfunktionen und Wachstum",
-              "beschreibung": "Materialsammlung zum Themenbereich „Exponentialfunktionen und Wachstum“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Funktionen",
-                "Exponentialfunktionen"
-              ],
-              "ordner": "material/mathematik/klasse-10/exponentialfunktionen-und-wachstum/",
-              "links": []
-            },
-            {
-              "titel": "Trigonometrische Funktionen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Trigonometrische Funktionen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Funktionen",
-                "Trigonometrie"
-              ],
-              "ordner": "material/mathematik/klasse-10/trigonometrische-funktionen/",
-              "links": []
-            },
-            {
-              "titel": "Funktionenvergleich und Modellierung",
-              "beschreibung": "Materialsammlung zum Themenbereich „Funktionenvergleich und Modellierung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Funktionen",
-                "Modellieren"
-              ],
-              "ordner": "material/mathematik/klasse-10/funktionenvergleich-und-modellierung/",
-              "links": []
-            },
-            {
-              "titel": "Kreis, Körper und zusammengesetzte Figuren",
-              "beschreibung": "Materialsammlung zum Themenbereich „Kreis, Körper und zusammengesetzte Figuren“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Geometrie",
-                "Körper"
-              ],
-              "ordner": "material/mathematik/klasse-10/kreis-koerper-und-zusammengesetzte-figuren/",
-              "links": []
-            },
-            {
-              "titel": "Sinussatz und Kosinussatz",
-              "beschreibung": "Materialsammlung zum Themenbereich „Sinussatz und Kosinussatz“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Geometrie",
-                "Trigonometrie"
-              ],
-              "ordner": "material/mathematik/klasse-10/sinussatz-und-kosinussatz/",
-              "links": []
-            },
-            {
-              "titel": "Gleichungen und Funktionen zur EF-Vorbereitung",
-              "beschreibung": "Materialsammlung zum Themenbereich „Gleichungen und Funktionen zur EF-Vorbereitung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Arithmetik/Algebra",
-                "Übergang EF"
-              ],
-              "ordner": "material/mathematik/klasse-10/gleichungen-und-funktionen-zur-ef-vorbereitung/",
-              "links": []
-            },
-            {
-              "titel": "Statistik, Simulation und Wahrscheinlichkeit",
-              "beschreibung": "Materialsammlung zum Themenbereich „Statistik, Simulation und Wahrscheinlichkeit“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Stochastik",
-                "Simulation"
-              ],
-              "ordner": "material/mathematik/klasse-10/statistik-simulation-und-wahrscheinlichkeit/",
-              "links": []
-            },
-            {
-              "titel": "Abschluss- und Übergangsvorbereitung EF",
-              "beschreibung": "Materialsammlung zum Themenbereich „Abschluss- und Übergangsvorbereitung EF“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Wiederholung",
-                "Diagnose"
-              ],
-              "ordner": "material/mathematik/klasse-10/abschluss-und-uebergangsvorbereitung-ef/",
-              "links": []
+              "links": [
+                {
+                  "typ": "Lernpfad",
+                  "titel": "Kongruenzsätze",
+                  "url": "material/mathematik/klasse-7/kongruenzsaetze/lernpfad-kongruenzsaetze.html"
+                }
+              ]
             }
           ]
         },
@@ -529,346 +59,38 @@
           "name": "EF",
           "themen": [
             {
-              "titel": "Funktionen und ihre Darstellungen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Funktionen und ihre Darstellungen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Funktionen und Analysis",
-                "EF"
-              ],
-              "ordner": "material/mathematik/ef/funktionen-und-ihre-darstellungen/",
-              "links": []
-            },
-            {
               "titel": "Transformationen von Funktionen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Transformationen von Funktionen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
+              "beschreibung": "Verschieben, Strecken, Spiegeln und Kombinieren von Funktionstransformationen.",
               "tags": [
-                "Funktionen und Analysis",
-                "Transformation"
-              ],
-              "ordner": "material/mathematik/ef/transformationen-von-funktionen/",
-              "links": []
-            },
-            {
-              "titel": "Ganzrationale Funktionen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Ganzrationale Funktionen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Funktionen und Analysis",
-                "Ganzrationale Funktionen"
-              ],
-              "ordner": "material/mathematik/ef/ganzrationale-funktionen/",
-              "links": []
-            },
-            {
-              "titel": "Änderungsraten und Ableitung",
-              "beschreibung": "Materialsammlung zum Themenbereich „Änderungsraten und Ableitung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Funktionen und Analysis",
-                "Ableitung"
-              ],
-              "ordner": "material/mathematik/ef/aenderungsraten-und-ableitung/",
-              "links": []
-            },
-            {
-              "titel": "Funktionsuntersuchung mit und ohne MMS",
-              "beschreibung": "Materialsammlung zum Themenbereich „Funktionsuntersuchung mit und ohne MMS“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Funktionen und Analysis",
-                "MMS"
-              ],
-              "ordner": "material/mathematik/ef/funktionsuntersuchung-mit-und-ohne-mms/",
-              "links": []
-            },
-            {
-              "titel": "Analytische Geometrie Grundlagen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Analytische Geometrie Grundlagen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Analytische Geometrie und Lineare Algebra",
-                "Vektoren"
-              ],
-              "ordner": "material/mathematik/ef/analytische-geometrie-grundlagen/",
-              "links": []
-            },
-            {
-              "titel": "Lineare Algebra Grundlagen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Lineare Algebra Grundlagen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Analytische Geometrie und Lineare Algebra",
-                "Lineare Algebra"
-              ],
-              "ordner": "material/mathematik/ef/lineare-algebra-grundlagen/",
-              "links": []
-            },
-            {
-              "titel": "Modellieren mit Funktionen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Modellieren mit Funktionen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Modellieren",
+                "Funktionen",
+                "Transformationen",
                 "EF"
               ],
-              "ordner": "material/mathematik/ef/modellieren-mit-funktionen/",
-              "links": []
+              "links": [
+                {
+                  "typ": "Lernpfad",
+                  "titel": "Transformationen interaktiv",
+                  "url": "material/mathematik/ef/funktionen/lernpfad-transformationen.html"
+                }
+              ]
             }
           ]
         },
         {
           "name": "Q1 GK",
-          "themen": [
-            {
-              "titel": "Differentialrechnung ganzrationaler Funktionen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Differentialrechnung ganzrationaler Funktionen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Analysis",
-                "GK"
-              ],
-              "ordner": "material/mathematik/q1-gk/differentialrechnung-ganzrationaler-funktionen/",
-              "links": []
-            },
-            {
-              "titel": "Extremwertprobleme und Modellierung",
-              "beschreibung": "Materialsammlung zum Themenbereich „Extremwertprobleme und Modellierung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Analysis",
-                "Modellieren"
-              ],
-              "ordner": "material/mathematik/q1-gk/extremwertprobleme-und-modellierung/",
-              "links": []
-            },
-            {
-              "titel": "Integralrechnung und Flächeninhalte",
-              "beschreibung": "Materialsammlung zum Themenbereich „Integralrechnung und Flächeninhalte“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Analysis",
-                "Integralrechnung"
-              ],
-              "ordner": "material/mathematik/q1-gk/integralrechnung-und-flaecheninhalte/",
-              "links": []
-            },
-            {
-              "titel": "Exponentialfunktionen und Wachstum",
-              "beschreibung": "Materialsammlung zum Themenbereich „Exponentialfunktionen und Wachstum“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Analysis",
-                "Exponentialfunktionen"
-              ],
-              "ordner": "material/mathematik/q1-gk/exponentialfunktionen-und-wachstum/",
-              "links": []
-            },
-            {
-              "titel": "Vektoren, Geraden und Lagebeziehungen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Vektoren, Geraden und Lagebeziehungen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Analytische Geometrie und Lineare Algebra",
-                "Geraden"
-              ],
-              "ordner": "material/mathematik/q1-gk/vektoren-geraden-und-lagebeziehungen/",
-              "links": []
-            },
-            {
-              "titel": "Ebenen in Parameter- und Koordinatenform",
-              "beschreibung": "Materialsammlung zum Themenbereich „Ebenen in Parameter- und Koordinatenform“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Analytische Geometrie und Lineare Algebra",
-                "Ebenen"
-              ],
-              "ordner": "material/mathematik/q1-gk/ebenen-in-parameter-und-koordinatenform/",
-              "links": []
-            }
-          ]
+          "themen": []
         },
         {
           "name": "Q1 LK",
-          "themen": [
-            {
-              "titel": "Vertiefte Differentialrechnung und Funktionsscharen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Vertiefte Differentialrechnung und Funktionsscharen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Analysis",
-                "LK"
-              ],
-              "ordner": "material/mathematik/q1-lk/vertiefte-differentialrechnung-und-funktionsscharen/",
-              "links": []
-            },
-            {
-              "titel": "Integralrechnung und Rekonstruktion",
-              "beschreibung": "Materialsammlung zum Themenbereich „Integralrechnung und Rekonstruktion“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Analysis",
-                "Integralrechnung"
-              ],
-              "ordner": "material/mathematik/q1-lk/integralrechnung-und-rekonstruktion/",
-              "links": []
-            },
-            {
-              "titel": "Exponentialfunktionen und komplexe Modellierung",
-              "beschreibung": "Materialsammlung zum Themenbereich „Exponentialfunktionen und komplexe Modellierung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Analysis",
-                "Exponentialfunktionen"
-              ],
-              "ordner": "material/mathematik/q1-lk/exponentialfunktionen-und-komplexe-modellierung/",
-              "links": []
-            },
-            {
-              "titel": "Vektoren, Geraden und Ebenen im Raum",
-              "beschreibung": "Materialsammlung zum Themenbereich „Vektoren, Geraden und Ebenen im Raum“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Analytische Geometrie und Lineare Algebra",
-                "LK"
-              ],
-              "ordner": "material/mathematik/q1-lk/vektoren-geraden-und-ebenen-im-raum/",
-              "links": []
-            },
-            {
-              "titel": "Skalarprodukt, Winkel und Abstände",
-              "beschreibung": "Materialsammlung zum Themenbereich „Skalarprodukt, Winkel und Abstände“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Analytische Geometrie und Lineare Algebra",
-                "Metrik"
-              ],
-              "ordner": "material/mathematik/q1-lk/skalarprodukt-winkel-und-abstaende/",
-              "links": []
-            },
-            {
-              "titel": "Lineare Gleichungssysteme in geometrischen Kontexten",
-              "beschreibung": "Materialsammlung zum Themenbereich „Lineare Gleichungssysteme in geometrischen Kontexten“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Analytische Geometrie und Lineare Algebra",
-                "LGS"
-              ],
-              "ordner": "material/mathematik/q1-lk/lineare-gleichungssysteme-in-geometrischen-kontexten/",
-              "links": []
-            }
-          ]
+          "themen": []
         },
         {
           "name": "Q2 GK",
-          "themen": [
-            {
-              "titel": "Analytische Geometrie Vertiefung",
-              "beschreibung": "Materialsammlung zum Themenbereich „Analytische Geometrie Vertiefung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Analytische Geometrie und Lineare Algebra",
-                "GK"
-              ],
-              "ordner": "material/mathematik/q2-gk/analytische-geometrie-vertiefung/",
-              "links": []
-            },
-            {
-              "titel": "Mehrstufige Zufallsexperimente",
-              "beschreibung": "Materialsammlung zum Themenbereich „Mehrstufige Zufallsexperimente“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Stochastik",
-                "Wahrscheinlichkeit"
-              ],
-              "ordner": "material/mathematik/q2-gk/mehrstufige-zufallsexperimente/",
-              "links": []
-            },
-            {
-              "titel": "Binomialverteilung",
-              "beschreibung": "Materialsammlung zum Themenbereich „Binomialverteilung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Stochastik",
-                "Binomialverteilung"
-              ],
-              "ordner": "material/mathematik/q2-gk/binomialverteilung/",
-              "links": []
-            },
-            {
-              "titel": "Hypothesentests",
-              "beschreibung": "Materialsammlung zum Themenbereich „Hypothesentests“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Stochastik",
-                "Testen"
-              ],
-              "ordner": "material/mathematik/q2-gk/hypothesentests/",
-              "links": []
-            },
-            {
-              "titel": "Abiturtraining Analysis",
-              "beschreibung": "Materialsammlung zum Themenbereich „Abiturtraining Analysis“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Abiturvorbereitung",
-                "Analysis"
-              ],
-              "ordner": "material/mathematik/q2-gk/abiturtraining-analysis/",
-              "links": []
-            },
-            {
-              "titel": "Abiturtraining Geometrie und Stochastik",
-              "beschreibung": "Materialsammlung zum Themenbereich „Abiturtraining Geometrie und Stochastik“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Abiturvorbereitung",
-                "GK"
-              ],
-              "ordner": "material/mathematik/q2-gk/abiturtraining-geometrie-und-stochastik/",
-              "links": []
-            }
-          ]
+          "themen": []
         },
         {
           "name": "Q2 LK",
-          "themen": [
-            {
-              "titel": "Analytische Geometrie: Abstände und Winkel",
-              "beschreibung": "Materialsammlung zum Themenbereich „Analytische Geometrie: Abstände und Winkel“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Analytische Geometrie und Lineare Algebra",
-                "LK"
-              ],
-              "ordner": "material/mathematik/q2-lk/analytische-geometrie-abstaende-und-winkel/",
-              "links": []
-            },
-            {
-              "titel": "Stochastik: Binomial- und Normalverteilung",
-              "beschreibung": "Materialsammlung zum Themenbereich „Stochastik: Binomial- und Normalverteilung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Stochastik",
-                "Verteilungen"
-              ],
-              "ordner": "material/mathematik/q2-lk/stochastik-binomial-und-normalverteilung/",
-              "links": []
-            },
-            {
-              "titel": "Hypothesentests und Signifikanz",
-              "beschreibung": "Materialsammlung zum Themenbereich „Hypothesentests und Signifikanz“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Stochastik",
-                "Testen"
-              ],
-              "ordner": "material/mathematik/q2-lk/hypothesentests-und-signifikanz/",
-              "links": []
-            },
-            {
-              "titel": "Schätzen von Parametern und Konfidenzintervalle",
-              "beschreibung": "Materialsammlung zum Themenbereich „Schätzen von Parametern und Konfidenzintervalle“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Stochastik",
-                "Intervalle"
-              ],
-              "ordner": "material/mathematik/q2-lk/schaetzen-von-parametern-und-konfidenzintervalle/",
-              "links": []
-            },
-            {
-              "titel": "Vertiefung Analysis und Modellierung",
-              "beschreibung": "Materialsammlung zum Themenbereich „Vertiefung Analysis und Modellierung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Analysis",
-                "LK"
-              ],
-              "ordner": "material/mathematik/q2-lk/vertiefung-analysis-und-modellierung/",
-              "links": []
-            },
-            {
-              "titel": "Abiturvorbereitung Leistungskurs",
-              "beschreibung": "Materialsammlung zum Themenbereich „Abiturvorbereitung Leistungskurs“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Abiturvorbereitung",
-                "LK"
-              ],
-              "ordner": "material/mathematik/q2-lk/abiturvorbereitung-leistungskurs/",
-              "links": []
-            }
-          ]
+          "themen": []
         }
       ]
     },
@@ -879,254 +101,20 @@
           "name": "Klasse 5",
           "themen": [
             {
-              "titel": "Naturwissenschaftliches Arbeiten",
-              "beschreibung": "Materialsammlung zum Themenbereich „Naturwissenschaftliches Arbeiten“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
+              "titel": "Wärme und Teilchenmodell",
+              "beschreibung": "Thermometer, Ausdehnung von Stoffen, Aggregatzustände und Anomalie des Wassers.",
               "tags": [
-                "Erkenntnisgewinnung",
-                "Grundlagen"
-              ],
-              "ordner": "material/physik/klasse-5/naturwissenschaftliches-arbeiten/",
-              "links": []
-            },
-            {
-              "titel": "Temperatur messen und Thermometer",
-              "beschreibung": "Materialsammlung zum Themenbereich „Temperatur messen und Thermometer“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Temperatur und Wärme",
-                "Messen"
-              ],
-              "ordner": "material/physik/klasse-5/temperatur-messen-und-thermometer/",
-              "links": []
-            },
-            {
-              "titel": "Wärme, Ausdehnung und Teilchenmodell",
-              "beschreibung": "Materialsammlung zum Themenbereich „Wärme, Ausdehnung und Teilchenmodell“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Temperatur und Wärme",
-                "Teilchenmodell"
-              ],
-              "ordner": "material/physik/klasse-5/waerme-ausdehnung-und-teilchenmodell/",
-              "links": []
-            },
-            {
-              "titel": "Aggregatzustände und Übergänge",
-              "beschreibung": "Materialsammlung zum Themenbereich „Aggregatzustände und Übergänge“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Temperatur und Wärme",
-                "Aggregatzustände"
-              ],
-              "ordner": "material/physik/klasse-5/aggregatzustaende-und-uebergaenge/",
-              "links": []
-            },
-            {
-              "titel": "Licht und Sehen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Licht und Sehen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Licht",
-                "Optik"
-              ],
-              "ordner": "material/physik/klasse-5/licht-und-sehen/",
-              "links": []
-            },
-            {
-              "titel": "Schatten, Mondphasen und Finsternisse",
-              "beschreibung": "Materialsammlung zum Themenbereich „Schatten, Mondphasen und Finsternisse“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Licht",
-                "Astronomie"
-              ],
-              "ordner": "material/physik/klasse-5/schatten-mondphasen-und-finsternisse/",
-              "links": []
-            },
-            {
-              "titel": "Magnetismus",
-              "beschreibung": "Materialsammlung zum Themenbereich „Magnetismus“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Elektrischer Strom und Magnetismus",
-                "Magnetismus"
-              ],
-              "ordner": "material/physik/klasse-5/magnetismus/",
-              "links": []
-            },
-            {
-              "titel": "Einfache Stromkreise",
-              "beschreibung": "Materialsammlung zum Themenbereich „Einfache Stromkreise“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Elektrischer Strom und Magnetismus",
-                "Stromkreis"
-              ],
-              "ordner": "material/physik/klasse-5/einfache-stromkreise/",
-              "links": []
-            }
-          ]
-        },
-        {
-          "name": "Klasse 6",
-          "themen": [
-            {
-              "titel": "Leben bei verschiedenen Temperaturen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Leben bei verschiedenen Temperaturen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Temperatur und Wärme",
-                "Alltag"
-              ],
-              "ordner": "material/physik/klasse-6/leben-bei-verschiedenen-temperaturen/",
-              "links": []
-            },
-            {
-              "titel": "Elektrische Geräte im Alltag",
-              "beschreibung": "Materialsammlung zum Themenbereich „Elektrische Geräte im Alltag“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Elektrischer Strom und Magnetismus",
-                "Elektrizität"
-              ],
-              "ordner": "material/physik/klasse-6/elektrische-geraete-im-alltag/",
-              "links": []
-            },
-            {
-              "titel": "Magnetismus vertieft",
-              "beschreibung": "Materialsammlung zum Themenbereich „Magnetismus vertieft“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Elektrischer Strom und Magnetismus",
-                "Magnetismus"
-              ],
-              "ordner": "material/physik/klasse-6/magnetismus-vertieft/",
-              "links": []
-            },
-            {
-              "titel": "Physik und Musik",
-              "beschreibung": "Materialsammlung zum Themenbereich „Physik und Musik“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Schall",
-                "Akustik"
-              ],
-              "ordner": "material/physik/klasse-6/physik-und-musik/",
-              "links": []
-            },
-            {
-              "titel": "Lärm und Schallschutz",
-              "beschreibung": "Materialsammlung zum Themenbereich „Lärm und Schallschutz“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Schall",
-                "Gesundheit"
-              ],
-              "ordner": "material/physik/klasse-6/laerm-und-schallschutz/",
-              "links": []
-            },
-            {
-              "titel": "Schall in Natur und Technik",
-              "beschreibung": "Materialsammlung zum Themenbereich „Schall in Natur und Technik“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Schall",
-                "Anwendungen"
-              ],
-              "ordner": "material/physik/klasse-6/schall-in-natur-und-technik/",
-              "links": []
-            },
-            {
-              "titel": "Reflexion und Lichtausbreitung",
-              "beschreibung": "Materialsammlung zum Themenbereich „Reflexion und Lichtausbreitung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Licht",
-                "Reflexion"
-              ],
-              "ordner": "material/physik/klasse-6/reflexion-und-lichtausbreitung/",
-              "links": []
-            },
-            {
-              "titel": "Objekte am Himmel",
-              "beschreibung": "Materialsammlung zum Themenbereich „Objekte am Himmel“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Sterne und Weltall",
-                "Astronomie"
-              ],
-              "ordner": "material/physik/klasse-6/objekte-am-himmel/",
-              "links": []
-            }
-          ]
-        },
-        {
-          "name": "Klasse 7",
-          "themen": [
-            {
-              "titel": "Bewegungen beschreiben",
-              "beschreibung": "Materialsammlung zum Themenbereich „Bewegungen beschreiben“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Bewegung, Kraft und Energie",
-                "Mechanik"
-              ],
-              "ordner": "material/physik/klasse-7/bewegungen-beschreiben/",
-              "links": []
-            },
-            {
-              "titel": "Kräfte und Wechselwirkungen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Kräfte und Wechselwirkungen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Bewegung, Kraft und Energie",
-                "Kräfte"
-              ],
-              "ordner": "material/physik/klasse-7/kraefte-und-wechselwirkungen/",
-              "links": []
-            },
-            {
-              "titel": "Energie und Arbeit",
-              "beschreibung": "Materialsammlung zum Themenbereich „Energie und Arbeit“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Bewegung, Kraft und Energie",
-                "Energie"
-              ],
-              "ordner": "material/physik/klasse-7/energie-und-arbeit/",
-              "links": []
-            },
-            {
-              "titel": "Druck in Flüssigkeiten und Gasen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Druck in Flüssigkeiten und Gasen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Druck und Auftrieb",
-                "Druck"
-              ],
-              "ordner": "material/physik/klasse-7/druck-in-fluessigkeiten-und-gasen/",
-              "links": []
-            },
-            {
-              "titel": "Auftrieb",
-              "beschreibung": "Materialsammlung zum Themenbereich „Auftrieb“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Druck und Auftrieb",
-                "Auftrieb"
-              ],
-              "ordner": "material/physik/klasse-7/auftrieb/",
-              "links": []
-            },
-            {
-              "titel": "Optische Instrumente",
-              "beschreibung": "Materialsammlung zum Themenbereich „Optische Instrumente“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Optische Instrumente",
-                "Linsen"
-              ],
-              "ordner": "material/physik/klasse-7/optische-instrumente/",
-              "links": []
-            },
-            {
-              "titel": "Teleskop und Mikroskop",
-              "beschreibung": "Materialsammlung zum Themenbereich „Teleskop und Mikroskop“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Optische Instrumente",
-                "Teleskop"
-              ],
-              "ordner": "material/physik/klasse-7/teleskop-und-mikroskop/",
-              "links": []
-            },
-            {
-              "titel": "Mechanik experimentell",
-              "beschreibung": "Materialsammlung zum Themenbereich „Mechanik experimentell“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Erkenntnisgewinnung",
+                "Wärme",
+                "Teilchenmodell",
                 "Experiment"
               ],
-              "ordner": "material/physik/klasse-7/mechanik-experimentell/",
-              "links": []
+              "links": [
+                {
+                  "typ": "Lernpfad",
+                  "titel": "Wärme entdecken",
+                  "url": "material/physik/klasse-5/waerme/lernpfad-waerme.html"
+                }
+              ]
             }
           ]
         },
@@ -1134,329 +122,20 @@
           "name": "Klasse 8",
           "themen": [
             {
-              "titel": "Stromstärke, Spannung und Widerstand",
-              "beschreibung": "Materialsammlung zum Themenbereich „Stromstärke, Spannung und Widerstand“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
+              "titel": "Astronomie und Radioteleskop",
+              "beschreibung": "Radioteleskop Effelsberg, elektromagnetische Strahlung und Schwarze Löcher.",
               "tags": [
-                "Elektrizität",
-                "Grundgrößen"
+                "Astronomie",
+                "Radioteleskop",
+                "Effelsberg"
               ],
-              "ordner": "material/physik/klasse-8/stromstaerke-spannung-und-widerstand/",
-              "links": []
-            },
-            {
-              "titel": "Reihen- und Parallelschaltungen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Reihen- und Parallelschaltungen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Elektrizität",
-                "Schaltungen"
-              ],
-              "ordner": "material/physik/klasse-8/reihen-und-parallelschaltungen/",
-              "links": []
-            },
-            {
-              "titel": "Elektrische Energie und Leistung",
-              "beschreibung": "Materialsammlung zum Themenbereich „Elektrische Energie und Leistung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Elektrizität",
-                "Energie"
-              ],
-              "ordner": "material/physik/klasse-8/elektrische-energie-und-leistung/",
-              "links": []
-            },
-            {
-              "titel": "Magnetfelder und Elektromagnetismus",
-              "beschreibung": "Materialsammlung zum Themenbereich „Magnetfelder und Elektromagnetismus“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Elektrizität",
-                "Elektromagnetismus"
-              ],
-              "ordner": "material/physik/klasse-8/magnetfelder-und-elektromagnetismus/",
-              "links": []
-            },
-            {
-              "titel": "Induktion qualitative Grundlagen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Induktion qualitative Grundlagen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Elektrizität",
-                "Induktion"
-              ],
-              "ordner": "material/physik/klasse-8/induktion-qualitative-grundlagen/",
-              "links": []
-            },
-            {
-              "titel": "Energieumwandlung und Energieentwertung",
-              "beschreibung": "Materialsammlung zum Themenbereich „Energieumwandlung und Energieentwertung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Energieversorgung",
-                "Energie"
-              ],
-              "ordner": "material/physik/klasse-8/energieumwandlung-und-energieentwertung/",
-              "links": []
-            },
-            {
-              "titel": "Wärmeübertragung und Klima",
-              "beschreibung": "Materialsammlung zum Themenbereich „Wärmeübertragung und Klima“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Temperatur und Wärme",
-                "Klima"
-              ],
-              "ordner": "material/physik/klasse-8/waermeuebertragung-und-klima/",
-              "links": []
-            },
-            {
-              "titel": "Sicherheit im Umgang mit Elektrizität",
-              "beschreibung": "Materialsammlung zum Themenbereich „Sicherheit im Umgang mit Elektrizität“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Elektrizität",
-                "Sicherheit"
-              ],
-              "ordner": "material/physik/klasse-8/sicherheit-im-umgang-mit-elektrizitaet/",
-              "links": []
-            }
-          ]
-        },
-        {
-          "name": "Klasse 9",
-          "themen": [
-            {
-              "titel": "Bewegung, Kraft und Energie vertieft",
-              "beschreibung": "Materialsammlung zum Themenbereich „Bewegung, Kraft und Energie vertieft“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Bewegung, Kraft und Energie",
-                "Mechanik"
-              ],
-              "ordner": "material/physik/klasse-9/bewegung-kraft-und-energie-vertieft/",
-              "links": []
-            },
-            {
-              "titel": "Newtonsche Gesetze",
-              "beschreibung": "Materialsammlung zum Themenbereich „Newtonsche Gesetze“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Bewegung, Kraft und Energie",
-                "Newton"
-              ],
-              "ordner": "material/physik/klasse-9/newtonsche-gesetze/",
-              "links": []
-            },
-            {
-              "titel": "Arbeit, Leistung und Energieerhaltung",
-              "beschreibung": "Materialsammlung zum Themenbereich „Arbeit, Leistung und Energieerhaltung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Bewegung, Kraft und Energie",
-                "Energie"
-              ],
-              "ordner": "material/physik/klasse-9/arbeit-leistung-und-energieerhaltung/",
-              "links": []
-            },
-            {
-              "titel": "Schwingungen und Wellen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Schwingungen und Wellen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Wellen",
-                "Schwingungen"
-              ],
-              "ordner": "material/physik/klasse-9/schwingungen-und-wellen/",
-              "links": []
-            },
-            {
-              "titel": "Radioaktivität und ionisierende Strahlung",
-              "beschreibung": "Materialsammlung zum Themenbereich „Radioaktivität und ionisierende Strahlung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Ionisierende Strahlung und Kernenergie",
-                "Radioaktivität"
-              ],
-              "ordner": "material/physik/klasse-9/radioaktivitaet-und-ionisierende-strahlung/",
-              "links": []
-            },
-            {
-              "titel": "Atom- und Kernphysik Grundlagen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Atom- und Kernphysik Grundlagen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Ionisierende Strahlung und Kernenergie",
-                "Atomphysik"
-              ],
-              "ordner": "material/physik/klasse-9/atom-und-kernphysik-grundlagen/",
-              "links": []
-            },
-            {
-              "titel": "Kernenergie und Strahlenschutz",
-              "beschreibung": "Materialsammlung zum Themenbereich „Kernenergie und Strahlenschutz“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Ionisierende Strahlung und Kernenergie",
-                "Bewertung"
-              ],
-              "ordner": "material/physik/klasse-9/kernenergie-und-strahlenschutz/",
-              "links": []
-            },
-            {
-              "titel": "Energieversorgung",
-              "beschreibung": "Materialsammlung zum Themenbereich „Energieversorgung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Energieversorgung",
-                "Nachhaltigkeit"
-              ],
-              "ordner": "material/physik/klasse-9/energieversorgung/",
-              "links": []
-            }
-          ]
-        },
-        {
-          "name": "Klasse 10",
-          "themen": [
-            {
-              "titel": "Elektrizität im Haushalt und Energieversorgung",
-              "beschreibung": "Materialsammlung zum Themenbereich „Elektrizität im Haushalt und Energieversorgung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Elektrizität",
-                "Energieversorgung"
-              ],
-              "ordner": "material/physik/klasse-10/elektrizitaet-im-haushalt-und-energieversorgung/",
-              "links": []
-            },
-            {
-              "titel": "Generator und Transformator",
-              "beschreibung": "Materialsammlung zum Themenbereich „Generator und Transformator“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Elektrizität",
-                "Induktion"
-              ],
-              "ordner": "material/physik/klasse-10/generator-und-transformator/",
-              "links": []
-            },
-            {
-              "titel": "Halbleiter und moderne Anwendungen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Halbleiter und moderne Anwendungen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Elektrizität",
-                "Technik"
-              ],
-              "ordner": "material/physik/klasse-10/halbleiter-und-moderne-anwendungen/",
-              "links": []
-            },
-            {
-              "titel": "Kosmos, Sterne und Weltbilder",
-              "beschreibung": "Materialsammlung zum Themenbereich „Kosmos, Sterne und Weltbilder“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Sterne und Weltall",
-                "Astronomie"
-              ],
-              "ordner": "material/physik/klasse-10/kosmos-sterne-und-weltbilder/",
-              "links": []
-            },
-            {
-              "titel": "Optik und Wellenphänomene",
-              "beschreibung": "Materialsammlung zum Themenbereich „Optik und Wellenphänomene“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Optik",
-                "Wellen"
-              ],
-              "ordner": "material/physik/klasse-10/optik-und-wellenphaenomene/",
-              "links": []
-            },
-            {
-              "titel": "Moderne Physik als Übergang",
-              "beschreibung": "Materialsammlung zum Themenbereich „Moderne Physik als Übergang“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Moderne Physik",
-                "Übergang EF"
-              ],
-              "ordner": "material/physik/klasse-10/moderne-physik-als-uebergang/",
-              "links": []
-            },
-            {
-              "titel": "Projekt: Physik in Technik und Gesellschaft",
-              "beschreibung": "Materialsammlung zum Themenbereich „Projekt: Physik in Technik und Gesellschaft“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Bewertung",
-                "Projekt"
-              ],
-              "ordner": "material/physik/klasse-10/projekt-physik-in-technik-und-gesellschaft/",
-              "links": []
-            },
-            {
-              "titel": "Vorbereitung Oberstufe",
-              "beschreibung": "Materialsammlung zum Themenbereich „Vorbereitung Oberstufe“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Wiederholung",
-                "EF-Vorbereitung"
-              ],
-              "ordner": "material/physik/klasse-10/vorbereitung-oberstufe/",
-              "links": []
-            }
-          ]
-        },
-        {
-          "name": "EF",
-          "themen": [
-            {
-              "titel": "Grundlagen der Mechanik",
-              "beschreibung": "Materialsammlung zum Themenbereich „Grundlagen der Mechanik“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Mechanik",
-                "EF"
-              ],
-              "ordner": "material/physik/ef/grundlagen-der-mechanik/",
-              "links": []
-            },
-            {
-              "titel": "Kinematik: Bewegungen beschreiben",
-              "beschreibung": "Materialsammlung zum Themenbereich „Kinematik: Bewegungen beschreiben“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Mechanik",
-                "Kinematik"
-              ],
-              "ordner": "material/physik/ef/kinematik-bewegungen-beschreiben/",
-              "links": []
-            },
-            {
-              "titel": "Dynamik: Kräfte und Newtonsche Gesetze",
-              "beschreibung": "Materialsammlung zum Themenbereich „Dynamik: Kräfte und Newtonsche Gesetze“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Mechanik",
-                "Dynamik"
-              ],
-              "ordner": "material/physik/ef/dynamik-kraefte-und-newtonsche-gesetze/",
-              "links": []
-            },
-            {
-              "titel": "Energie und Impuls in mechanischen Systemen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Energie und Impuls in mechanischen Systemen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Mechanik",
-                "Energie"
-              ],
-              "ordner": "material/physik/ef/energie-und-impuls-in-mechanischen-systemen/",
-              "links": []
-            },
-            {
-              "titel": "Kreisbewegung und Gravitation",
-              "beschreibung": "Materialsammlung zum Themenbereich „Kreisbewegung und Gravitation“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Mechanik",
-                "Kreisbewegung"
-              ],
-              "ordner": "material/physik/ef/kreisbewegung-und-gravitation/",
-              "links": []
-            },
-            {
-              "titel": "Weltbilder in der Physik",
-              "beschreibung": "Materialsammlung zum Themenbereich „Weltbilder in der Physik“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Weltbilder",
-                "Erkenntnisgewinnung"
-              ],
-              "ordner": "material/physik/ef/weltbilder-in-der-physik/",
-              "links": []
-            },
-            {
-              "titel": "Mathematisierung und Experimentauswertung",
-              "beschreibung": "Materialsammlung zum Themenbereich „Mathematisierung und Experimentauswertung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Methoden",
-                "Experiment"
-              ],
-              "ordner": "material/physik/ef/mathematisierung-und-experimentauswertung/",
-              "links": []
+              "links": [
+                {
+                  "typ": "Lernpfad",
+                  "titel": "Radioteleskop Effelsberg",
+                  "url": "material/physik/klasse-8/astronomie/lernpfad-radioteleskop.html"
+                }
+              ]
             }
           ]
         },
@@ -1464,261 +143,54 @@
           "name": "Q1 GK",
           "themen": [
             {
-              "titel": "Periodische Vorgänge und Schwingungen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Periodische Vorgänge und Schwingungen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
+              "titel": "Photoeffekt und Photonenmodell",
+              "beschreibung": "Deutung des Photoeffekts mit Lichtquanten, Grenzfrequenz und Austrittsarbeit.",
               "tags": [
-                "Schwingungen",
-                "GK"
+                "Quantenphysik",
+                "Photoeffekt",
+                "Photonen"
               ],
-              "ordner": "material/physik/q1-gk/periodische-vorgaenge-und-schwingungen/",
-              "links": []
-            },
-            {
-              "titel": "Mechanische Wellen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Mechanische Wellen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Wellen",
-                "GK"
-              ],
-              "ordner": "material/physik/q1-gk/mechanische-wellen/",
-              "links": []
-            },
-            {
-              "titel": "Elektrische Felder",
-              "beschreibung": "Materialsammlung zum Themenbereich „Elektrische Felder“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Felder",
-                "Elektrizität"
-              ],
-              "ordner": "material/physik/q1-gk/elektrische-felder/",
-              "links": []
-            },
-            {
-              "titel": "Magnetische Felder",
-              "beschreibung": "Materialsammlung zum Themenbereich „Magnetische Felder“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Felder",
-                "Magnetismus"
-              ],
-              "ordner": "material/physik/q1-gk/magnetische-felder/",
-              "links": []
-            },
-            {
-              "titel": "Elektromagnetische Induktion",
-              "beschreibung": "Materialsammlung zum Themenbereich „Elektromagnetische Induktion“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Induktion",
-                "GK"
-              ],
-              "ordner": "material/physik/q1-gk/elektromagnetische-induktion/",
-              "links": []
-            },
-            {
-              "titel": "Schlüsselexperimente im Grundkurs",
-              "beschreibung": "Materialsammlung zum Themenbereich „Schlüsselexperimente im Grundkurs“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Experiment",
-                "GK"
-              ],
-              "ordner": "material/physik/q1-gk/schluesselexperimente-im-grundkurs/",
-              "links": []
+              "links": [
+                {
+                  "typ": "Lernpfad",
+                  "titel": "Photoeffekt",
+                  "url": "material/physik/q1-gk/photoeffekt/lernpfad-photoeffekt.html"
+                }
+              ]
             }
           ]
+        },
+        {
+          "name": "Klasse 6",
+          "themen": []
+        },
+        {
+          "name": "Klasse 7",
+          "themen": []
+        },
+        {
+          "name": "Klasse 9",
+          "themen": []
+        },
+        {
+          "name": "Klasse 10",
+          "themen": []
+        },
+        {
+          "name": "EF",
+          "themen": []
         },
         {
           "name": "Q1 LK",
-          "themen": [
-            {
-              "titel": "Schwingungen vertieft",
-              "beschreibung": "Materialsammlung zum Themenbereich „Schwingungen vertieft“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Schwingungen",
-                "LK"
-              ],
-              "ordner": "material/physik/q1-lk/schwingungen-vertieft/",
-              "links": []
-            },
-            {
-              "titel": "Mechanische Wellen und Interferenz",
-              "beschreibung": "Materialsammlung zum Themenbereich „Mechanische Wellen und Interferenz“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Wellen",
-                "LK"
-              ],
-              "ordner": "material/physik/q1-lk/mechanische-wellen-und-interferenz/",
-              "links": []
-            },
-            {
-              "titel": "Elektrische Felder und Potentiale",
-              "beschreibung": "Materialsammlung zum Themenbereich „Elektrische Felder und Potentiale“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Felder",
-                "Elektrisches Feld"
-              ],
-              "ordner": "material/physik/q1-lk/elektrische-felder-und-potentiale/",
-              "links": []
-            },
-            {
-              "titel": "Magnetische Felder und Lorentzkraft",
-              "beschreibung": "Materialsammlung zum Themenbereich „Magnetische Felder und Lorentzkraft“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Felder",
-                "Magnetisches Feld"
-              ],
-              "ordner": "material/physik/q1-lk/magnetische-felder-und-lorentzkraft/",
-              "links": []
-            },
-            {
-              "titel": "Elektromagnetische Induktion quantitativ",
-              "beschreibung": "Materialsammlung zum Themenbereich „Elektromagnetische Induktion quantitativ“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Induktion",
-                "LK"
-              ],
-              "ordner": "material/physik/q1-lk/elektromagnetische-induktion-quantitativ/",
-              "links": []
-            },
-            {
-              "titel": "Elektromagnetische Schwingungen und Wellen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Elektromagnetische Schwingungen und Wellen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Elektromagnetismus",
-                "LK"
-              ],
-              "ordner": "material/physik/q1-lk/elektromagnetische-schwingungen-und-wellen/",
-              "links": []
-            }
-          ]
+          "themen": []
         },
         {
           "name": "Q2 GK",
-          "themen": [
-            {
-              "titel": "Quantenphysik: Licht und Elektronen",
-              "beschreibung": "Materialsammlung zum Themenbereich „Quantenphysik: Licht und Elektronen“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Quantenphysik",
-                "GK"
-              ],
-              "ordner": "material/physik/q2-gk/quantenphysik-licht-und-elektronen/",
-              "links": []
-            },
-            {
-              "titel": "Photoeffekt",
-              "beschreibung": "Materialsammlung zum Themenbereich „Photoeffekt“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Quantenphysik",
-                "Photoeffekt"
-              ],
-              "ordner": "material/physik/q2-gk/photoeffekt/",
-              "links": []
-            },
-            {
-              "titel": "Doppelspalt und Welle-Teilchen-Dualismus",
-              "beschreibung": "Materialsammlung zum Themenbereich „Doppelspalt und Welle-Teilchen-Dualismus“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Quantenphysik",
-                "Doppelspalt"
-              ],
-              "ordner": "material/physik/q2-gk/doppelspalt-und-welle-teilchen-dualismus/",
-              "links": []
-            },
-            {
-              "titel": "Atommodelle",
-              "beschreibung": "Materialsammlung zum Themenbereich „Atommodelle“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Atomphysik",
-                "GK"
-              ],
-              "ordner": "material/physik/q2-gk/atommodelle/",
-              "links": []
-            },
-            {
-              "titel": "Kernphysik und Strahlung",
-              "beschreibung": "Materialsammlung zum Themenbereich „Kernphysik und Strahlung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Kernphysik",
-                "Strahlung"
-              ],
-              "ordner": "material/physik/q2-gk/kernphysik-und-strahlung/",
-              "links": []
-            },
-            {
-              "titel": "Abiturvorbereitung Grundkurs",
-              "beschreibung": "Materialsammlung zum Themenbereich „Abiturvorbereitung Grundkurs“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Abiturvorbereitung",
-                "GK"
-              ],
-              "ordner": "material/physik/q2-gk/abiturvorbereitung-grundkurs/",
-              "links": []
-            }
-          ]
+          "themen": []
         },
         {
           "name": "Q2 LK",
-          "themen": [
-            {
-              "titel": "Quantenphysik vertieft",
-              "beschreibung": "Materialsammlung zum Themenbereich „Quantenphysik vertieft“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Quantenphysik",
-                "LK"
-              ],
-              "ordner": "material/physik/q2-lk/quantenphysik-vertieft/",
-              "links": []
-            },
-            {
-              "titel": "De-Broglie-Wellen und Elektronenbeugung",
-              "beschreibung": "Materialsammlung zum Themenbereich „De-Broglie-Wellen und Elektronenbeugung“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Quantenphysik",
-                "Materiewellen"
-              ],
-              "ordner": "material/physik/q2-lk/de-broglie-wellen-und-elektronenbeugung/",
-              "links": []
-            },
-            {
-              "titel": "Quantenphysikalisches Atommodell",
-              "beschreibung": "Materialsammlung zum Themenbereich „Quantenphysikalisches Atommodell“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Atomphysik",
-                "LK"
-              ],
-              "ordner": "material/physik/q2-lk/quantenphysikalisches-atommodell/",
-              "links": []
-            },
-            {
-              "titel": "Mikrokosmos und Makrokosmos",
-              "beschreibung": "Materialsammlung zum Themenbereich „Mikrokosmos und Makrokosmos“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Moderne Physik",
-                "Modelle"
-              ],
-              "ordner": "material/physik/q2-lk/mikrokosmos-und-makrokosmos/",
-              "links": []
-            },
-            {
-              "titel": "Kernphysik vertieft",
-              "beschreibung": "Materialsammlung zum Themenbereich „Kernphysik vertieft“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Kernphysik",
-                "LK"
-              ],
-              "ordner": "material/physik/q2-lk/kernphysik-vertieft/",
-              "links": []
-            },
-            {
-              "titel": "Abiturvorbereitung Leistungskurs",
-              "beschreibung": "Materialsammlung zum Themenbereich „Abiturvorbereitung Leistungskurs“: Platz für Lernpfade, PDFs, Aufgaben, Lösungen und interaktive Übungen.",
-              "tags": [
-                "Abiturvorbereitung",
-                "LK"
-              ],
-              "ordner": "material/physik/q2-lk/abiturvorbereitung-leistungskurs/",
-              "links": []
-            }
-          ]
+          "themen": []
         }
       ]
     }
