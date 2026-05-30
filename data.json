@@ -54,7 +54,28 @@
               ]
             }
           ]
-        },
+        }
+        {
+  "typ": "Lernpfad",
+  "titel": "Innenwinkelsumme im Dreieck",
+  "beschreibung": "Entdeckender Lernpfad zur Innenwinkelsumme im Dreieck mit Zerreißprobe, Hilfslinie, Stufenwinkeln und Wechselwinkeln.",
+  "url": "mathematik/klasse-7/innenwinkelsumme.html",
+  "fach": "mathematik",
+  "jahrgang": "klasse-7",
+  "inhaltsfeld": "geometrie",
+  "tags": [
+    "geometrie",
+    "winkel",
+    "dreieck",
+    "innenwinkelsumme",
+    "stufenwinkel",
+    "wechselwinkel",
+    "hilfslinie",
+    "begründen",
+    "beweisen"
+  ]
+}
+        ,
         {
           "name": "EF",
           "themen": [
